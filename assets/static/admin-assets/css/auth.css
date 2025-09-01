@@ -1,0 +1,485 @@
+/** Login  start **/
+
+.login-outr {
+  background: #f9f3ff;
+  position: relative;
+  min-height: calc(100vh - 522px);
+}
+
+.login-outr .copyright-footer {
+  padding: 10px 0;
+  z-index: 2;
+  position: relative;
+}
+
+.login {
+  width: 100%;
+  opacity: 1;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login a {
+  text-decoration: none;
+}
+
+.login .form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 30px 20px;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px;
+  border: 1px solid #eddbff;
+}
+
+.signup-link a {
+  color: #7330be !important;
+}
+
+.login .form-section p {
+  color: #535353;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.login .form-section p a {
+  color: #535353;
+}
+
+.login .form-section .extra-login {
+  float: left;
+  width: 100%;
+  margin: 25px 0 25px;
+  text-align: center;
+  position: relative;
+}
+
+.login .form-section .extra-login::before {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  height: 1px;
+  background: #d8dcdc;
+  content: "";
+}
+
+.login .form-section .extra-login > span {
+  width: auto;
+  float: none;
+  display: inline-block;
+  background: #fff;
+  padding: 1px 20px;
+  z-index: 1;
+  position: relative;
+  font-family: Open Sans;
+  font-size: 15px;
+  color: #535353;
+  text-transform: capitalize;
+}
+
+.login .form-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.login .logo-2 img {
+  margin-bottom: 14px;
+  width: 100px;
+}
+
+.login .logo-2 h4 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.login .form-section .social-list li {
+  display: inline-block !important;
+  margin-bottom: 5px;
+}
+
+.login .form-section .social-list li a {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 2px 0 3px 0;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.login .form-section .social-list li a i {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  float: left;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.login .form-section .social-list li a span {
+  margin-right: 7px;
+}
+
+.login .form-section .thembo {
+  margin-left: 0;
+  color: #7330be;
+  font-weight: 500;
+}
+
+.login .form-section h3 {
+  margin: 0 0 25px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #040404;
+  text-transform: uppercase;
+}
+
+.login .form-section .form-group {
+  margin-bottom: 20px;
+}
+
+.login .form-section .form-control {
+  font-size: 16px;
+  outline: none;
+  padding: 12px 20px;
+  color: #535353;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+  position: relative;
+}
+.login .form-section .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #7330be;
+}
+.login .form-section .form-select {
+  font-size: 16px;
+  outline: none;
+  padding: 12px 20px;
+  color: #535353;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+  position: relative;
+}
+.login .form-section .form-select:focus {
+  box-shadow: none;
+  border: 1px solid #7330be;
+}
+.login .form-section .checkbox .terms {
+  margin-left: 3px;
+}
+
+.login .form-section .btn-md {
+  cursor: pointer;
+  height: 60px;
+  color: #fff;
+  padding: 13px 50px 12px 50px;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  border-radius: 3px;
+}
+
+.login .form-section button:focus {
+  outline: none;
+  outline: 0 auto;
+}
+
+.login .form-section .btn-theme.focus,
+.btn-theme:focus {
+  box-shadow: none;
+}
+
+.login .form-section .btn-theme {
+  border: none;
+  color: #fff;
+  height: 50px;
+}
+
+.login .form-section .btn-theme:hover {
+  box-shadow: none;
+  background: transparent;
+  border: 1px solid #6727b8;
+  color: #6727b8;
+}
+
+.login .form-section .terms {
+  margin-left: 3px;
+}
+
+.login .form-section .form-check a {
+  color: #7330be !important;
+}
+
+.login .form-section a.forgot-password {
+  font-size: 16px;
+  color: #7330be !important;
+}
+
+.login .form-section a.forgot-password:hover {
+  color: #7330be;
+}
+
+.login .form-group input[type="text"]:focus {
+  border-color: #7330be;
+  background: #fff;
+  box-shadow: none;
+}
+/** Social media **/
+
+.login .google-btn {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  background: #4082ed;
+}
+
+.text-orange {
+  color: #6727b8 !important;
+}
+
+.form-group label {
+  text-align: left;
+}
+
+@media (max-width: 1400px) {
+  .login {
+    align-items: inherit;
+  }
+
+  .login .form-section {
+    padding: 45px 30px;
+    margin-top: 25px;
+  }
+
+  .login .logo-2 img {
+    width: 55px;
+  }
+
+  .login .logo-2 h4 {
+    font-size: 25px;
+  }
+
+  .login .form-section h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+
+  .login .form-section .form-group {
+    margin-bottom: 10px;
+  }
+
+  .login .form-section .form-control {
+    font-size: 15px;
+  }
+
+  .login .form-section .form-select {
+    font-size: 15px;
+  }
+  .login .form-section .form-group.my-4.clearfix {
+    margin: 1rem 0px !important;
+  }
+
+  .login .form-section .btn-theme {
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login + footer .copyright-footer p {
+    color: #fff !important;
+    font-size: 13px;
+  }
+
+  .login {
+    align-items: inherit;
+  }
+
+  .login .form-section {
+    padding: 45px 30px;
+  }
+
+  .login .logo-2 img {
+    width: 55px;
+  }
+
+  .login .logo-2 h4 {
+    font-size: 25px;
+  }
+
+  .login .form-section h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+
+  .login .form-section .form-group {
+    margin-bottom: 10px;
+  }
+
+  .login .form-section .form-control {
+    font-size: 15px;
+  }
+  .login .form-section .form-select {
+    font-size: 15px;
+  }
+
+  .login .form-section .form-group.my-4.clearfix {
+    margin: 1rem 0px !important;
+  }
+
+  .login .form-section .btn-theme {
+    height: 40px;
+  }
+}
+
+/** Login  end **/
+.login footer {
+  margin-top: auto;
+}
+
+.form-check-input:checked {
+  background-color: #7330be;
+  border-color: #7330be;
+  box-shadow: none;
+}
+
+#img_logo {
+  margin-bottom: 10px;
+  width: 90px;
+  border-radius: 10px;
+}
+
+#login .toggle-password,
+#SignUp-form .toggle-password,
+#rest-password .toggle-password,
+#Affiliate-SignUp-form .toggle-password {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 14px;
+}
+
+.login .form-section.affiliate-sec {
+  max-width: 680px;
+}
+
+.or-text {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.or-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 100%;
+  height: 1px;
+  background-color: #d8dcdc;
+  z-index: -1;
+}
+
+.or-text span {
+  background-color: #fff;
+  padding: 0px 15px;
+}
+
+.social-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.social-btns .social-login {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2e4ff;
+  border-radius: 50%;
+  color: #000;
+  font-size: 16px;
+  gap: 15px;
+  border: 0;
+}
+
+.social-btns .social-login img {
+  width: 28px;
+}
+
+.social-btns .social-login.apple {
+  background-color: #000;
+  color: #fff;
+}
+
+.social-btns .social-login.facebook {
+  background-color: #0866ff;
+  color: #fff;
+}
+
+.social-btns .social-login.email {
+  background-color: #893fc8;
+  color: #fff;
+}
+
+.login .form-section .label-link p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #535353;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.login .form-section .label-link p a {
+    color: #6727b8;
+}
+
+.social-btns.styleone .social-login {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.social-btns.styleone .social-login .label {
+    min-width: 160px;
+    text-align: start;
+}
+
+
+.login-outr .hidden {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.login-outr .visible {
+    max-height: 1000px;
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+

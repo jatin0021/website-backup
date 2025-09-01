@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0">
+   <meta name="description" content="Roamvy">
+    <meta name="keywords"
+      content="Pay-as-you-go travel internet in 200+ destinations. In-app voice calls. No plans, no expirations. Just easy, affordable, reliable mobile connectivity for travelers.">
+    <meta name="author" content="toxsltech">
+    <meta name="robots" content="noindex, nofollow">
+    <title> Roamvy </title>
+    <link rel="shortcut icon" href="/static/admin-assets/images/favicon.ico" />
+
+    <link rel="stylesheet" href="/static/admin-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/all.min.css">
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="/static/admin-assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/static/admin-assets/css/flash.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/loader.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="/static/admin-assets/css/landing.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/landing-new.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/user.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/frontend-responsive.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/intlTelInput.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/auth.css">
+</head>
+
+<body>
+
+    
+
+    <script src="/static/admin-assets/js/moment.min.js"></script>
+    <script src="/static/admin-assets/js/customized-js/moment.js"></script>
+
+    <div class="main-wrapper main-page-header position-relative">
+        <div class="header main-head position-relative">
+          <div class="container">
+            <div class="d-flex align-items-center gap-2"> 
+                <div class="header-left active outer-header d-flex align-items-center">
+                  <a href="/" class="navbar-brand logo logo-normal d-flex align-items-center"  onclick="Loader()">
+                    <img src="/static/admin-assets/images/logo.png">
+                  </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-xl-center justify-content-end w-100 gap-3">
+
+                  <nav class="navbar navbar-expand-lg  bg-transparent h-100 d-none d-lg-none d-xl-block">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto">
+                    
+                    
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link " href="/what-an-esim/" onclick="Loader()">What is an eSIM</a>
+                        
+                    </li>
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link " href="/destinations/" onclick="Loader()">Destinations</a>
+                        
+                    </li>
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/compatibility/" onclick="Loader()">Compatibility</a>
+                        
+                    </li>
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link  nav-item-active"  href="/affiliate/partner-with-us/" onclick="Loader()">Partner with us</a>
+                        
+                    </li>
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/help-center/" onclick="Loader()">Help Center</a>
+                        
+                    </li>
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/blog-list/" onclick="Loader()">Blog</a>
+                        
+                    </li>
+                    
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+                
+                <div class="d-flex align-items-center gap-4">
+                  <div class="d-flex align-items-center gap-4">
+                      <ul class="d-flex align-items-center gap-3">  
+                          
+                            <li class="nav_item ms-0">
+                              <a href="/accounts/signup/"
+                                class="text-dark auth-btn">
+                                <i class="far fa-user"></i>
+                              </a>
+                            </li>
+                            
+                            <li class="nav_item">
+                              <a class="hdr-cart-btn" href="/my-cart/">
+                                <img src="/static/admin-assets/images/cart.png" />
+                                <span class="cart-count">
+                                  0
+                                </span>
+                              </a>
+                            </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-end d-xl-none gap-3">
+                      <a class="btn btn-theme bars-btn" data-bs-toggle="offcanvas"
+                          href="#top_navbar_offcanvas" role="button" aria-controls="top_navbar_offcanvas">
+                          <i class="fas fa-bars"></i>
+                      </a>
+
+                    
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!--User Dropdown offcanvas-->
+  <div class="offcanvas offcanvas-end mobile-menu-card user-mobile" tabindex="-1" id="user_dropdown_offcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body">
+      <div class="mobile-menu">
+        <div class="sider-card">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="side-profile-card">
+            
+            <div class="side-profile-dis">
+              
+                <div class="side-profile-card">
+                    <span class="profile-img">
+                      <img src="/static/admin-assets/images/logo.png">
+                    </span>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="dashboard_menu mobile-dash-menu">
+
+          <ul>
+            <li>
+              <a class="active" href="/users/user-profile/"><span><i class="far fa-user"></i></span>
+                Personal Info
+              </a>
+            </li>
+            <li>
+              <a href="/users/wallet/"><span> <i class="fal fa-wallet"></i></span>
+                Wallet
+              </a>
+            </li>
+            <li>
+              <a href="/users/user-cards/"><span><i class="fas fa-credit-card"></i></span>
+               Save Cards
+              </a>
+            </li>
+            <li>
+              <a href="/users/rewards/"><span><i class="far fa-money-bill-alt"></i></span>
+              Rewards
+              </a>
+            </li>
+            <li>
+              <a href="/users/user-order/"><span><i class="fas fa-list"></i></span>
+                Orders
+              </a>
+            </li>
+            <li>
+              <a href="/users/user-notifications/"><span><i class="far fa-bell"></i></span>
+               Notifications
+              </a>
+            </li>
+            <li>
+              <a href="/users/change-password/"><span><i class="far fa-key"></i></span>
+               Change Password
+              </a>
+            </li>
+            <li>
+              <a href="/users/user-delete/"><span><i class="far fa-trash-alt"></i></span>
+               Delete Account
+              </a>
+            </li>
+    
+            <li>
+              <a href="/accounts/logout/" message="Are you sure you want to logout?" class="logout_confirm"><span><i class="fas fa-sign-out-alt"></i></span>
+                Logout
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Top Navbar offcanvas-->
+  <div class="offcanvas offcanvas-start mobile-menu-card" tabindex="-1" id="top_navbar_offcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body">
+        <div class="mobile-menu">
+            <div class="sider-card">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                
+                <div class="side-profile-card">
+                    <span class="profile-img">
+                      <img src="/static/admin-assets/images/logo.png">
+                    </span>
+                </div>
+                
+            </div>
+
+            <div class="side-bar-links">
+                <ul class="side-link-list">
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link " href="/what-an-esim/" onclick="Loader()">What is an eSIM</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link " href="/destinations/" onclick="Loader()">Destinations</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/compatibility/" onclick="Loader()">Compatibility</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link  nav-item-active"  href="/affiliate/partner-with-us/" onclick="Loader()">Partner with us</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/help-center/" onclick="Loader()">Help Center</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/blog-list/" onclick="Loader()">Blog</a>
+                        
+                    
+                </ul>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .header.main-head.position-fixed {
+    position: relative !important;
+  }
+</style>
+
+
+
+<div id="main-wrapper">
+  <section class="banner-sec styleOne">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-6">
+          <div class="banner-dis">
+            <h1>Discover Roamvy: An eSIM app for business</h1>
+            <p>
+              Make sure your employees are always connected — get mobile data plans with our business eSIM solution.
+            </p>
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 mt-4 mb-4 mb-lg-0">
+              <a class="commn-btn" href="/affiliate/partner-login/">
+               Sign In
+             </a>
+              <a class="commn-bd-btn" href="#partnersForm">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="banner-img">
+            <img src="/static/admin-assets/images/sim-1.jpg" class="img-fluid" alt="Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why_esim pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="common-title mb-3 mb-lg-5 text-center">
+          <h3>Why choose the Roamvy eSIM app for your business?</h3>
+          <p>Use the Roamvy eSIM app for internet access on smartphones, tablets, and laptops.</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="advantage-box text-center">
+            <div class="icon">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <h3 class="mt-3">Flexible mobile data plans</h3>
+            <p>
+              Get the best deal every time and only pay for what you need. You can choose from hundreds of countries,
+              various durations, and different amounts of mobile data without being dragged into long and expensive
+              contracts.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="advantage-box text-center">
+            <div class="icon">
+              <i class="fas fa-sync"></i>
+            </div>
+            <h3 class="mt-3">Automatic setup and activation</h3>
+            <p>
+              Roamvy offers automatic, one-tap eSIM installation that takes just minutes. After that, top up the eSIM
+              with mobile data plans that will activate automatically once the user reaches their destination
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="advantage-box text-center">
+            <div class="icon">
+              <i class="far fa-comment-alt"></i>
+            </div>
+            <h3 class="mt-3">Dedicated manager and 24/7 customer support</h3>
+            <p>
+              Roamvy has 24/7 chat support for all users. And if you ever run into problems, your dedicated account
+              manager will be there to help you solve your issues ASAP.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section class="partner-sec pb-0">
+    <div class="container">
+      <div class="common-title mb-3 mb-lg-5 text-center">
+        <h3>Tailored Partner Programs</h3>
+        <p class="w-75 m-auto">Grow your business with tailored partner programs for Corporates, Resellers and Affiliates. Whether you're
+          powering teams, selling to travelers, or creating content, we’ve got a partnership model built for you.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-6  mb-lg-0 mb-3">
+          <div class="partner-box">
+            <div class="partner-img position-relative" style="background-image: url('../../static/admin-assets/images/sim-2.jpg');">
+              <div class="img-txt">
+                <h5>Corporate Partners</h5>
+                <p>Empower your global workforce with seamless connectivity. Roamvy helps you manage data access across teams with 
+                  flexible integration, white-label options, and centralized control.</p>
+              </div>
+            </div>
+            <div class="partner-box-txt">
+            <div class="partner-text">
+              <ul class="list-unstyled ps-0 mb-0">
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>White-label solutions with your branding</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>API integration for automation and scalability</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Flexible pre- or post-payment options</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>24/7 support in 10+ languages</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Transparent pricing and usage tracking</span>
+                </li>
+              </ul>
+            </div>
+            <div class="partnet-btn">
+              <a href="#partnersForm" class="commn-btn w-100 text-center">Join the Corporate Partner Program</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6  mb-lg-0 mb-3">
+          <div class="partner-box">
+            <div class="partner-img position-relative" style="background-image: url('../../static/admin-assets/images/sim-3.jpg');">
+              <div class="img-txt">
+                <h5>Resellers & Travel Partners</h5>
+                <p>Enhance your offerings with Roamvy’s eSIM solutions - a simple, high-quality add-on that boosts value 
+                  for your customers and revenue for your business. Whether you're a travel agency, hotel, concierge service, 
+                  OTA, or tech platform. We provide flexible tools to sell, bundle, or integrate our services under your own brand.</p>
+              </div>
+            </div>
+            <div class="partner-box-txt">
+            <div class="partner-text">
+              <ul class="list-unstyled ps-0 mb-0">
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>White-label or co-branded storefront options</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Seamless API integration for automated sales</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Volume-based pricing and wholesale discounts</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Real-time analytics through dashboards</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Access to pre-made marketing assets and support</span>
+                </li>
+              </ul>
+            </div>
+            <div class="partnet-btn">
+              <a href="#partnersForm" class="commn-btn w-100 text-center">Join the Resellers & Travel Program</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6  mt-xl-0 mt-lg-3 mt-0">
+          <div class="partner-box">
+            <div class="partner-img position-relative" style="background-image: url('../../static/admin-assets/images/sim-4.jpg');">
+              <div class="img-txt">
+                <h5>Affiliates & Content Creators</h5>
+                <p>Love sharing smart travel hacks? Earn while you do it. Join Roamvy’s affiliate program and promote global eSIM plans to 
+                  your audience with ease — no tech setup required.</p>
+              </div>
+            </div>
+            <div class="partner-box-txt">
+            <div class="partner-text">
+              <ul class="list-unstyled ps-0 mb-0">
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Earn commission for every referral or sale</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Unique tracking links & performance dashboards</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Access to branded banners, visuals, and content</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Fast setup, no integration needed</span>
+                </li>
+                <li>
+                  <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                </svg>
+                </div>
+                  <span>Ongoing support and monthly payouts</span>
+                </li>
+              </ul>
+            </div>
+            <div class="partnet-btn">
+              <a href="#partnersForm" class="commn-btn w-100 text-center">Join the Affiliate Program</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="benifit-esim pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="common-title mb-3 mb-lg-5 text-center">
+          <h3>Benefits of Roamvy eSIM data plans for business</h3>
+          <p>Keep your team connected.</p>
+        </div>
+        <div class="business-section mb-5 mb-lg-5">
+          <div class="row gap-3 gap-md-0">
+            <div class="col-md-6 business-image-wrapper">
+              <img src="/static/admin-assets/images/benifit-img1.jpg" alt="Images" class="img-fluid">
+            </div>
+            <div class="col-md-6 business-text">
+              <div class="common-title">
+                <h3>Tailored solutions for your business needs</h3>
+                <p>
+                  Whether it’s a small family business or a massive enterprise, Roamvy caters to all.
+                  Get a mobile data package that suits your business needs.
+                </p>
+                <a href="#partnersForm" role="button" class="commn-btn">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-3 gx-md-0">
+          <div class="col-md-6 pe-md-4">
+            <div class="bg-dark left-side mt-3">
+              <div class="p-4 d-flex flex-column">
+                <div class="common-title mb-4">
+                  <h3 class="text-white">Coverage in 200+ destinations worldwide</h3>
+                  <p class="mt-3 text-white">
+                    Roamvy offers dozens of mobile data plans in 200+ destinations, as well as regional and global plans
+                    for those special cases when you need your people to stay connected as they go.
+                  </p>
+                </div>
+                <div class="benifit_img-box mt-auto d-flex justify-content-center p-3">
+                  <img src="/static/admin-assets/images/benifit-img3.jpg" alt="Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ps-md-4">
+            <div class="bg-secondary right-side mt-3">
+              <div class="p-4 d-flex flex-column">
+                <div class="common-title mb-4">
+                  <h3 class="text-white">Seamless connectivity for business travelers</h3>
+                  <p class="mt-3 text-white">
+                    Roamvy is an easy-to-use app that ensures your employees have an internet connection as they travel
+                    while still being able to use their original SIM card and number.
+                  </p>
+                </div>
+                <div class="benifit_img-box mt-auto d-flex justify-content-center p-3">
+                  <img src="/static/admin-assets/images/benifit-img4.jpg" alt="Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="business-section mt-3 mt-md-5">
+            <div class="row gap-md-0">
+              <div class="col-md-6 business-text">
+                <div class="common-title">
+                  <h3>
+                    No roaming fees — ever
+                  </h3>
+                  <h3>
+                    No roaming fees — ever
+                  </h3>
+                  <p>
+                    An eSIM for business is an excellent short-term solution for business travelers who want to cut costs on roaming fees while staying connected at all times.
+                  </p>
+                  <a href="#partnersForm" role="button" class="commn-btn">Contact Us</a>
+                </div>
+              </div>
+              <div class="col-md-6 business-image-wrapper">
+                <img 
+                  src="/static/admin-assets/images/benifit-img2.jpg" alt="Images" 
+                  class="img-fluid" 
+                >
+              </div>
+            </div>
+          </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="partners-area">
+    <div class="container">
+      <div class="partners-form" id="partnersForm">
+        <div class="row form-row">
+          <!-- Left panel -->
+          <div class="col-12 col-lg-6 left-panel">
+            <div class="common-title content-wrapper">
+              <h3 class="text-white">Let’s talk to get a quote</h3>
+              <p class="text-white">Fill out the form, and we’ll get in touch.</p>
+            </div>
+            <div class="form-image">
+              <img src="/static/admin-assets/images/contact.png" alt="Image" />
+            </div>
+          </div>
+          <!-- Right panel -->
+       
+
+          <div class="col-12 col-lg-6 right-panel">
+            <form class="form" id="Affiliate-SignUp-form" method="POST">
+              <input type="hidden" name="csrfmiddlewaretoken" value="ugt70Qyk33yjfq9g2kqVNeWOtJfsZwW3Qp4G0MyiPtg8uJyQ5deo4Nismt25hfh9">
+              <div class="form-group mb-4">
+                <label for="contactName" class="form-label">Name</label>
+                <input type="text" onkeyup="capitalizeAfterSpace(this)" class="form-control" autocomplete=off  placeholder="Enter your name" id='full_name' name="full_name"  maxlength='30'> 
+              </div>
+
+              <div class="form-group mb-4">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" placeholder="Enter your email address" name="email"   maxlength='50'> 
+              </div>
+
+              <div class="form-group mb-4">
+                <label for="email" class="form-label">Country Of Registration</label>
+                <div class="form-addons">
+                    <select class="form-select" required aria-label="Default select example" name="country" id="country">
+                        <option value="" >Select</option>
+                        
+                        <option value="Afghanistan">Afghanistan</option>
+                        
+                        <option value="Aland Islands">Aland Islands</option>
+                        
+                        <option value="Albania">Albania</option>
+                        
+                        <option value="Algeria">Algeria</option>
+                        
+                        <option value="Anguilla">Anguilla</option>
+                        
+                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                        
+                        <option value="Argentina">Argentina</option>
+                        
+                        <option value="Armenia">Armenia</option>
+                        
+                        <option value="Australia">Australia</option>
+                        
+                        <option value="Austria">Austria</option>
+                        
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        
+                        <option value="Bahrain">Bahrain</option>
+                        
+                        <option value="Bangladesh">Bangladesh</option>
+                        
+                        <option value="Barbados">Barbados</option>
+                        
+                        <option value="Belarus">Belarus</option>
+                        
+                        <option value="Belgium">Belgium</option>
+                        
+                        <option value="Bolivia">Bolivia</option>
+                        
+                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                        
+                        <option value="Botswana">Botswana</option>
+                        
+                        <option value="Brazil">Brazil</option>
+                        
+                        <option value="Brunei Darussalam">Brunei Darussalam</option>
+                        
+                        <option value="Bulgaria">Bulgaria</option>
+                        
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        
+                        <option value="Cambodia">Cambodia</option>
+                        
+                        <option value="Cameroon">Cameroon</option>
+                        
+                        <option value="Canada">Canada</option>
+                        
+                        <option value="Cayman Islands">Cayman Islands</option>
+                        
+                        <option value="Central African Republic">Central African Republic</option>
+                        
+                        <option value="Chad">Chad</option>
+                        
+                        <option value="Chile">Chile</option>
+                        
+                        <option value="China mainland">China mainland</option>
+                        
+                        <option value="Colombia">Colombia</option>
+                        
+                        <option value="Costa Rica">Costa Rica</option>
+                        
+                        <option value="Cote d&#x27;Ivoire">Cote d&#x27;Ivoire</option>
+                        
+                        <option value="Croatia">Croatia</option>
+                        
+                        <option value="Cyprus">Cyprus</option>
+                        
+                        <option value="Czech Republic">Czech Republic</option>
+                        
+                        <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                        
+                        <option value="Denmark">Denmark</option>
+                        
+                        <option value="Dominica">Dominica</option>
+                        
+                        <option value="Dominican Republic">Dominican Republic</option>
+                        
+                        <option value="Ecuador">Ecuador</option>
+                        
+                        <option value="Egypt">Egypt</option>
+                        
+                        <option value="El Salvador">El Salvador</option>
+                        
+                        <option value="Estonia">Estonia</option>
+                        
+                        <option value="Eswatini">Eswatini</option>
+                        
+                        <option value="Finland">Finland</option>
+                        
+                        <option value="France">France</option>
+                        
+                        <option value="French Guiana">French Guiana</option>
+                        
+                        <option value="French West Indies">French West Indies</option>
+                        
+                        <option value="Gabon">Gabon</option>
+                        
+                        <option value="Georgia">Georgia</option>
+                        
+                        <option value="Germany">Germany</option>
+                        
+                        <option value="Ghana">Ghana</option>
+                        
+                        <option value="Gibraltar">Gibraltar</option>
+                        
+                        <option value="Greece">Greece</option>
+                        
+                        <option value="Greenland">Greenland</option>
+                        
+                        <option value="Grenada">Grenada</option>
+                        
+                        <option value="Guadeloupe">Guadeloupe</option>
+                        
+                        <option value="Guam">Guam</option>
+                        
+                        <option value="Guatemala">Guatemala</option>
+                        
+                        <option value="Guernsey">Guernsey</option>
+                        
+                        <option value="Guinea-Bissau">Guinea-Bissau</option>
+                        
+                        <option value="Honduras">Honduras</option>
+                        
+                        <option value="Hong Kong (China)">Hong Kong (China)</option>
+                        
+                        <option value="Hungary">Hungary</option>
+                        
+                        <option value="Iceland">Iceland</option>
+                        
+                        <option value="India">India</option>
+                        
+                        <option value="Indonesia">Indonesia</option>
+                        
+                        <option value="Iraq">Iraq</option>
+                        
+                        <option value="Ireland">Ireland</option>
+                        
+                        <option value="Isle of Man">Isle of Man</option>
+                        
+                        <option value="Israel">Israel</option>
+                        
+                        <option value="Italy">Italy</option>
+                        
+                        <option value="Jamaica">Jamaica</option>
+                        
+                        <option value="Japan">Japan</option>
+                        
+                        <option value="Jersey">Jersey</option>
+                        
+                        <option value="Jordan">Jordan</option>
+                        
+                        <option value="Kazakhstan">Kazakhstan</option>
+                        
+                        <option value="Kenya">Kenya</option>
+                        
+                        <option value="Kiribati">Kiribati</option>
+                        
+                        <option value="Kosovo">Kosovo</option>
+                        
+                        <option value="Kuwait">Kuwait</option>
+                        
+                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                        
+                        <option value="Laos">Laos</option>
+                        
+                        <option value="Latvia">Latvia</option>
+                        
+                        <option value="Liberia">Liberia</option>
+                        
+                        <option value="Liechtenstein">Liechtenstein</option>
+                        
+                        <option value="Lithuania">Lithuania</option>
+                        
+                        <option value="Luxembourg">Luxembourg</option>
+                        
+                        <option value="Macao (China)">Macao (China)</option>
+                        
+                        <option value="Madagascar">Madagascar</option>
+                        
+                        <option value="Malawi">Malawi</option>
+                        
+                        <option value="Malaysia">Malaysia</option>
+                        
+                        <option value="Maldives">Maldives</option>
+                        
+                        <option value="Mali">Mali</option>
+                        
+                        <option value="Malta">Malta</option>
+                        
+                        <option value="Mauritius">Mauritius</option>
+                        
+                        <option value="Mexico">Mexico</option>
+                        
+                        <option value="Moldova">Moldova</option>
+                        
+                        <option value="Monaco">Monaco</option>
+                        
+                        <option value="Mongolia">Mongolia</option>
+                        
+                        <option value="Montenegro">Montenegro</option>
+                        
+                        <option value="Montserrat">Montserrat</option>
+                        
+                        <option value="Morocco">Morocco</option>
+                        
+                        <option value="Mozambique">Mozambique</option>
+                        
+                        <option value="Nepal">Nepal</option>
+                        
+                        <option value="Netherlands">Netherlands</option>
+                        
+                        <option value="Netherlands Antilles">Netherlands Antilles</option>
+                        
+                        <option value="New Zealand">New Zealand</option>
+                        
+                        <option value="Nicaragua">Nicaragua</option>
+                        
+                        <option value="Niger">Niger</option>
+                        
+                        <option value="Nigeria">Nigeria</option>
+                        
+                        <option value="North Macedonia">North Macedonia</option>
+                        
+                        <option value="Norway">Norway</option>
+                        
+                        <option value="Oman">Oman</option>
+                        
+                        <option value="Pakistan">Pakistan</option>
+                        
+                        <option value="Panama">Panama</option>
+                        
+                        <option value="Paraguay">Paraguay</option>
+                        
+                        <option value="Peru">Peru</option>
+                        
+                        <option value="Philippines">Philippines</option>
+                        
+                        <option value="Poland">Poland</option>
+                        
+                        <option value="Portugal">Portugal</option>
+                        
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        
+                        <option value="Qatar">Qatar</option>
+                        
+                        <option value="Republic of the Congo">Republic of the Congo</option>
+                        
+                        <option value="Reunion">Reunion</option>
+                        
+                        <option value="Romania">Romania</option>
+                        
+                        <option value="Russia">Russia</option>
+                        
+                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                        
+                        <option value="Saint Lucia">Saint Lucia</option>
+                        
+                        <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                        
+                        <option value="Samoa">Samoa</option>
+                        
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        
+                        <option value="Senegal">Senegal</option>
+                        
+                        <option value="Serbia">Serbia</option>
+                        
+                        <option value="Seychelles">Seychelles</option>
+                        
+                        <option value="Singapore">Singapore</option>
+                        
+                        <option value="Slovakia">Slovakia</option>
+                        
+                        <option value="Slovenia">Slovenia</option>
+                        
+                        <option value="South Africa">South Africa</option>
+                        
+                        <option value="South Korea">South Korea</option>
+                        
+                        <option value="Spain">Spain</option>
+                        
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        
+                        <option value="Sudan">Sudan</option>
+                        
+                        <option value="Sweden">Sweden</option>
+                        
+                        <option value="Switzerland">Switzerland</option>
+                        
+                        <option value="Taiwan (China)">Taiwan (China)</option>
+                        
+                        <option value="Tajikistan">Tajikistan</option>
+                        
+                        <option value="Tanzania">Tanzania</option>
+                        
+                        <option value="Thailand">Thailand</option>
+                        
+                        <option value="Tunisia">Tunisia</option>
+                        
+                        <option value="Turkey">Turkey</option>
+                        
+                        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                        
+                        <option value="Uganda">Uganda</option>
+                        
+                        <option value="Ukraine">Ukraine</option>
+                        
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                        
+                        <option value="United Kingdom">United Kingdom</option>
+                        
+                        <option value="United States">United States</option>
+                        
+                        <option value="Uruguay">Uruguay</option>
+                        
+                        <option value="Uzbekistan">Uzbekistan</option>
+                        
+                        <option value="Vietnam">Vietnam</option>
+                        
+                        <option value="Virgin Islands- British">Virgin Islands- British</option>
+                        
+                        <option value="Yemen">Yemen</option>
+                        
+                        <option value="Zambia">Zambia</option>
+                        
+                    </select>
+                </div>
+              </div>
+
+              <div class="form-group mb-4">
+                <label for="phoneNumber" class="form-label">Phone</label>
+                    <input id="country_code" value="+91" type="hidden" name="country_code" class="form-control" maxlength="20">
+                    <input type="hidden"  value="in" name="country_iso_code" id="country_iso_code" class="form-control"  maxlength="10">
+                    <input type="text" placeholder="Enter Mobile No" onkeypress="return /[0-9]/i.test(event.key)" name="mobile_no" id="mobile_no" maxlength="15" class="form-control" > 
+              </div>
+
+              
+
+              
+              <div class="form-group mb-4 destinations-group">
+                <label class="form-label">Select Your Interest</label>
+                <div class="form-check mb-3">
+                      <input class="form-check-input" type="radio" name="check" value='1' id="check1" checked>
+                      <label class="form-check-label" for="check1">
+                        Corporate Partners
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="radio" name="check" value='2' id="check2" >
+                      <label class="form-check-label" for="check2">
+                        Reseller & Travel Partners
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="check" value='3' id="check3" >
+                      <label class="form-check-label" for="check3">
+                        Affiliate & Content Creators
+                      </label>
+                    </div>
+                    <label id="check-error" class="error" for="check"></label>
+              </div>
+
+             
+              <div class="form-group mb-4 checkbox-group">
+                <label class="form-check-label" for="exampleCheck1">By continuing, you agree to Roamvy’s <a class='text-orange' target="_blank" href="/terms-and-conditions/">Terms & Conditions</a> and <a class='text-orange' target="_blank" href="/privacy-policy/">Privacy Policy.</a></label>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="commn-btn w-100">Submit</button>
+              </div>
+              <div class="col-lg-12">
+                  <div class="already-btn mt-4">
+                      <p class="signup-link  mb-0 text-center">Already have an account?<a class="ms-2" href="/affiliate/partner-login/">Sign In</a></p>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- form submited -->
+<div class="modal fade" id="exampleModalone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Form Submitted</h1> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-5 pt-4">
+        <div class="form-sumnit">
+          <div class="form-img text-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+            </svg>
+          </div>
+          <div class="form-text text-center">
+            <h5 class="text-dark">Your form has been submitted <br> successfully.</h>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<footer class="footer-area pt-5">
+    <div class="footer-widget">
+        <div class="container">
+              <div class="d-flex align-items-center justify-content-between flex-wrap border-bottom mb-lg-5 mb-2 pb-lg-4 pb-2 gap-3">
+                <div class="footer-left-logo ">
+                      <a href="/" class="footer-logo mb-0">
+                            <img src="/static/admin-assets/images/logo.png">
+                        </a>
+                </div>
+                <div class="store-icon d-flex align-items-center gap-3">
+                    <div class="cming-badge">
+                        Coming Soon
+                    </div>
+                    <a href="#">
+                        <img src="/static/admin-assets/images/apple-store.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/static/admin-assets/images/google-store.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row footer-widget-wrapper pt-100 pb-70">
+                <!-- <div class="col">
+                    <div class="footer-widget-box about-us">
+                            <a href="/" class="footer-logo">
+                                <img src="/static/admin-assets/images/logo.png">
+                            </a>
+                        <p class="mb-3">
+                            "I've had issues with dropped calls and poor coverage in the  past, but since switching to [Provider], my phone has been working  perfectly
+                        </p>
+                    </div>
+                </div> -->
+
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Explore</h4>
+                        <ul class="footer-list">
+                            
+                            
+                                <li>
+                                    
+                                    <a href="/" onclick="Loader()">Home</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="/destinations/" onclick="Loader()">Destinations</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="/compatibility/" onclick="Loader()">Compatibility</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="/affiliate/partner-with-us/" onclick="Loader()">Partner with us</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="/help-center/" onclick="Loader()">Help Center</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="/blog-list/" onclick="Loader()">Blog</a>
+                                    
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Countries</h4>
+                        <ul class="footer-list">
+                            
+                            
+                                
+                                    <li>
+                                        <a href="/country-packages/united-states/">
+                                            <i class="fas fa-angle-right"></i>United States
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/canada/">
+                                            <i class="fas fa-angle-right"></i>Canada
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/mexico/">
+                                            <i class="fas fa-angle-right"></i>Mexico
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/france/">
+                                            <i class="fas fa-angle-right"></i>France
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/italy/">
+                                            <i class="fas fa-angle-right"></i>Italy
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/spain/">
+                                            <i class="fas fa-angle-right"></i>Spain
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/turkey/">
+                                            <i class="fas fa-angle-right"></i>Turkey
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/united-arab-emirates/">
+                                            <i class="fas fa-angle-right"></i>United Arab Emirates
+                                        </a>
+                                    </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Quick Links </h4>
+                        <ul class="footer-list">
+                            
+                            
+                                <li>
+                                    
+                                    <a href="/about-us/" onclick="Loader()">About Us</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="/contact-us/" onclick="Loader()">Contact Us</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="/refund-policy/" onclick="Loader()">Refund Policy</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="/cookies-policy/" onclick="Loader()">Cookie Policy</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="/privacy-policy/" onclick="Loader()">Privacy Policy</a>
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="/terms-and-conditions/" onclick="Loader()">Terms and Conditions</a>
+                                    
+                                </li>
+                            
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Get In Touch </h4>
+                          <ul class="footer-social d-flex flex-column">
+                                                        
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=61577800799386" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                        </svg>
+                                    </span>
+                                    Facebok
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/roamvy/" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                    </svg>
+                                    </span>
+                                    Instagram
+                                </a>
+                            </li>
+                             <li>
+                                <a href="https://www.tiktok.com/@roamvy" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                                        </svg>
+                                    </span>
+                                    Tiktkok
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/RoamvyeSIM" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                        </svg>
+                                    </span>
+                                    Twitter
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.linkedin.com/company/roamvy" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                        </svg>
+                                    </span>
+                                    LinkedIn
+                                </a>
+                            </li>
+                           
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="copyright">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-xl-between justify-content-center gap-3 flex-wrap">
+                <div class="copyright-link">
+                    <p class="mb-0 text-center">Copyright © <span id="full_year"></span><a
+                        href="/"> Roamvy </a> | All Rights Reserved.
+                    </p>
+                </div>
+             <div class="payment-icons">
+                    <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center justify-content-center flex-wrap gap-2">
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/visa.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/mastercard.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/paypal-logo.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/amex.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/apple.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/google-pay.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/stripe.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script src="/static/admin-assets/js/jquery-3.6.0.min.js"></script>
+<script src="/static/admin-assets/js/bootstrap.bundle.min.js"></script>
+<script src="/static/admin-assets/js/jquery.fancybox.min.js"></script>
+<!-- Swiper JS -->
+<script src="/static/admin-assets/js/swiper-js/swiper-bundle.min.js"></script>
+<script src="/static/admin-assets/js/jquery.slimscroll.min.js"></script>
+<script src="/static/admin-assets/js/jquery.dataTables.min.js"></script>
+<script src="/static/admin-assets/js/dataTables.bootstrap4.min.js"></script>
+<script src="/static/admin-assets/js/script.js"></script>
+<script src="/static/admin-assets/js/validate.js"></script>
+<script src="/static/admin-assets/js/additional-methods.min.js"></script>
+<script src="/static/admin-assets/js/customized-js/common.js"></script>
+<script src="/static/admin-assets/js/customized-js/sweet-alerts.js"></script>
+<script src="/static/admin-assets/js/intlTelInput-jquery.min.js"></script>
+<script src="/static/admin-assets/js/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
+<script src="/static/admin-assets/js/customized-js/auth-validation.js"></script>
+
+<script>
+    // SignUp Page Validation
+$("#Affiliate-SignUp-form").validate({
+    rules: {
+      
+        full_name: {
+            required: true,
+            normalizer: function (value) {
+                return $.trim(value);
+            },
+        },
+        email: {
+            required: true,
+            normalizer: function (value) {
+                return $.trim(value);
+            },
+            email:true,
+            //is_email_exists:true,
+        },
+        country: {
+            required: true,
+            normalizer: function (value) {
+                return $.trim(value);
+            },
+        },
+        mobile_no: {
+            required: true,
+            normalizer: function (value) {
+                return $.trim(value);
+            },
+        },
+        check: {
+            required: true,
+        },
+      
+        term_and_condition:{
+            required: true, 
+            normalizer: function (value) {
+                return $.trim(value);
+            },
+        },
+    },
+    messages: {
+      
+        full_name: {
+            required: "Please enter full name",
+        },
+        email: {
+            required: "Please enter email",
+        },
+        email: {
+            required: "Please select country",
+        },
+        mobile_no: {
+            required: "Please enter phone no.",
+        },
+        check: {
+            required: "Please select interest",
+        },
+        term_and_condition: {
+            required: "Please indicate you are agree with our term and conditions",
+        },
+    }
+});
+     // For country code picker intlTelInputGlobals
+   $("#mobile_no").intlTelInput({
+    initialCountry: "auto",
+    separateDialCode: true,
+    geoIpLookup: function(callback) {
+        fetch("https://ipapi.co/json")
+          .then(function(res) { return res.json(); })
+          .then(function(data) { callback(data.country_code); 
+            $('#country_code').val(data.country_code)
+            $('#country_iso_code').val(data.country_calling_code)
+        }).catch(function() { callback("in"); 
+          $('#country_code').val('+91')
+          $('#country_iso_code').val('in')
+        });
+      }
+    }).on('countrychange', function (e, countryData) {
+        $('#country_code').val($('.iti__selected-dial-code').text())
+        $('#country_iso_code').val($("#mobile_no").intlTelInput("getSelectedCountryData").iso2)
+    });
+</script>

@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="Roamvy">
+    <meta name="keywords"
+      content="Pay-as-you-go travel internet in 200+ destinations. In-app voice calls. No plans, no expirations. Just easy, affordable, reliable mobile connectivity for travelers.">
+    <meta name="author" content="toxsltech">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Roamvy</title>
+    <link rel="shortcut icon" href="/static/admin-assets/images/favicon.ico" />
+
+    <link rel="stylesheet" href="/static/admin-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/all.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="/static/admin-assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/static/admin-assets/css/flash.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/loader.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="/static/admin-assets/css/landing.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/landing-new.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/user.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/frontend-responsive.css">
+</head>
+<body>
+
+
+
+<script src="/static/admin-assets/js/moment.min.js"></script>
+<script src="/static/admin-assets/js/customized-js/moment.js"></script>
+
+
+
+<div class="main-wrapper main-page-header position-relative">
+  
+    <div class="header main-head position-relative">
+  
+      <div class="container">
+        <div class="d-flex align-items-center gap-2"> 
+            <div class="header-left active outer-header">
+              <a href="/" class="navbar-brand logo logo-normal d-flex align-items-center"  onclick="Loader()">
+                <img src="/static/admin-assets/images/logo.png">
+              </a>
+            </div>
+            <div class="d-flex align-items-center justify-content-center w-100">
+              <nav class="navbar navbar-expand-lg bg-transparent h-100 d-none d-lg-none d-xl-block">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                  <ul class="navbar-nav mx-auto">
+                    
+                    
+                        
+                          <li class="nav-item"><a class="nav-link " href="/what-an-esim/" onclick="Loader()">What is an eSIM</a></li>
+                        
+                    
+                        
+                          <li class="nav-item"><a class="nav-link " href="/destinations/" onclick="Loader()">Destinations</a></li>
+                        
+                    
+                        
+                          <li class="nav-item"><a class="nav-link "  href="/compatibility/" onclick="Loader()">Compatibility</a></li>
+                        
+                    
+                        
+                          <li class="nav-item"><a class="nav-link "  href="/affiliate/partner-with-us/" onclick="Loader()">Partner with us</a></li>
+                        
+                    
+                        
+                          <li class="nav-item"><a class="nav-link "  href="/help-center/" onclick="Loader()">Help Center</a></li>
+                        
+                    
+                        
+                          <li class="nav-item"><a class="nav-link "  href="/blog-list/" onclick="Loader()">Blog</a></li>
+                        
+                    
+                  </ul>
+
+                </div>
+              </nav>
+            </div>
+            
+            <div class="d-flex gap-3 gap-lg-2">
+              <ul class="d-flex align-items-center gap-lg-3 gap-3">
+                  
+                    
+                    <div class="login-btn position-relative me-2 d-lg-block d-none">
+                      <a href="/accounts/login/" class="text-capitalize">login</a>
+                    </div>
+                    
+                    <li class="nav_item d-lg-none d-block">
+                      <a href="/accounts/signup/" class="text-dark auth-btn">
+                          <i class="far fa-user"></i>
+                      </a>
+                    </li>
+                  
+              </ul>
+
+              
+                  <span class="d-lg-flex d-none nav-item d-flex amount_currency amount-currency align-items-center cardnew position-relative"  onclick="GetCurrencyRates('')" >
+                    <span class="currency_symbol text-dark skiptranslate" data-bs-toggle="modal" data-bs-target="#currency_modal" id="currencySymbol">
+                    
+                    <img class='lang_img' lang='en' src="/media/country_flag/united-kingdom.png"/>
+                    
+                    </span>
+                    
+                    <span class="text-dark nav-link py-0 px-1"> | </span>
+                    <a class="text-dark skiptranslate" data-bs-toggle="modal" data-bs-target="#currency_modal" id="amountCurrency" >
+                      USD
+                    </a>
+                  </span>
+                  <ul class="list-unstyled d-flex align-items-center">
+                   <li class="nav_item">
+                  
+                  <a class="hdr-cart-btn" href="/my-cart/">
+                  
+                    <img src="/static/admin-assets/images/cart.png" />
+                    <span class="cart-count">
+                      0
+                    </span>
+                  </a>
+                </li>
+                </ul>
+            </div>
+            
+            <div class="d-flex align-items-center justify-content-end d-xl-none gap-3">
+                <a class="btn btn-theme bars-btn ms-sm-3 ms-1" data-bs-toggle="offcanvas"
+                    href="#top_navbar_offcanvas" role="button" aria-controls="top_navbar_offcanvas">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  <!--User links offcanvas-->
+  <div class="offcanvas offcanvas-end mobile-menu-card user-mobile" tabindex="-1" id="user_dropdown_offcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body">
+      <div class="mobile-menu">
+        <div class="sider-card">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="side-profile-card">
+            
+            <div class="side-profile-dis">
+              
+                <div class="side-profile-card">
+                    <span class="profile-img">
+                      <img src="/static/admin-assets/images/logo.png">
+                    </span>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="dashboard_menu mobile-dash-menu">
+
+          <ul>
+            <li>
+              <a class="active" href="/users/user-profile/"><span><i class="far fa-user"></i></span>
+                My Profile
+              </a>
+            </li>
+            
+         
+          
+            
+
+            <li>
+              <a href="/users/my-esims/">
+                <span><i class="far fa-list-alt"></i></span>My eSIMs
+              </a>
+            </li>
+            
+
+            <li>
+              <a href="/users/user-order/"><span><i class="fas fa-list"></i></span>
+               My Orders
+              </a>
+            </li>
+            <li>
+              <a href="/users/rewards/"><span><i class="far fa-money-bill-alt"></i></span>
+              My Rewards
+              </a>
+            </li>
+
+            <li>
+              <a href="/users/user-cards/"><span><i class="fas fa-credit-card"></i></span>
+               Saved Cards
+              </a>
+            </li>
+          
+            <li>
+              <a href="/users/user-notifications/"><span><i class="far fa-bell"></i></span>
+               Notifications
+              </a>
+            </li>
+            <li>
+              <a href="/users/support-queries/"><span><i class="fas fa-user-headset"></i></span>
+               Support
+              </a>
+            </li>
+            <li>
+              <a href="/users/change-password/"><span><i class="far fa-key"></i></span>
+               Change Password
+              </a>
+            </li>
+
+            
+
+            <li>
+              <a href="/users/user-delete/"><span><i class="far fa-trash-alt"></i></span>
+               Delete Account
+              </a>
+            </li>
+    
+            <li>
+              <a href="/accounts/logout/" message="Are you sure you want to logout?" class="logout_confirm"><span><i class="fas fa-sign-out-alt"></i></span>
+                Logout
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Top Navbar offcanvas-->
+  <div class="offcanvas offcanvas-start mobile-menu-card" tabindex="-1" id="top_navbar_offcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body">
+        <div class="mobile-menu">
+            <div class="sider-card">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                
+                <div class="side-profile-card">
+                    <span class="profile-img">
+                      <img src="/static/admin-assets/images/logo.png">
+                    </span>
+                </div>
+                
+            </div>
+
+            <div class="side-bar-links">
+                <ul class="side-link-list">
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link " href="/what-an-esim/" onclick="Loader()">What is an eSIM</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link " href="/destinations/" onclick="Loader()">Destinations</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/compatibility/" onclick="Loader()">Compatibility</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/affiliate/partner-with-us/" onclick="Loader()">Partner with us</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/help-center/" onclick="Loader()">Help Center</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/blog-list/" onclick="Loader()">Blog</a>
+                        
+                    
+                      
+                  <span class="d-lg-none d-flex nav-item d-flex amount_currency amount-currency align-items-center cardnew position-relative"  onclick="GetCurrencyRates('')" >
+                      <span class="currency_symbol text-dark skiptranslate" data-bs-toggle="modal" data-bs-target="#currency_modal" id="currencySymbol">
+                      
+                      <img class='lang_img' lang='en' src="/media/country_flag/united-kingdom.png"/>
+                      
+                      </span>
+                    
+                      <span class="text-dark nav-link py-0 px-1"> | </span>
+                        <a class="text-dark skiptranslate" data-bs-toggle="modal" data-bs-target="#currency_modal" id="amountCurrency" >
+                          USD
+                        </a>
+                    </span>
+                    
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- supported Countries Modal -->
+  <div class="modal fade commonmodal lan_cur_modal" id="currency_modal" tabindex="-1" aria-labelledby="choosecard" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+      
+              <span class="close-modal" data-bs-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+              </span>
+            </div>
+
+            <div class="modal-body">
+
+              <ul class="nav nav-tabs mb-4">
+                <li><a class="nav-link-toggle-1"  data-bs-toggle="tab" href="#home1"><i class="fas fa-globe-americas"></i>&nbsp; Language</a></li>
+                <li><a class="nav-link-toggle-2" data-bs-toggle="tab"  href="#menu1"><i class="fas fa-dollar-sign"></i>&nbsp; Currency</a></li>
+              </ul>
+
+              <div class="tab-content pb-5">
+                
+                  <div id="home1" class="tab-pane fade">
+                    <div class="selector-modal-content-langs">
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('ar',this)">
+                        <div class="language-item align-items-center">  
+                          <div class="image-column">
+                              <img class="flag-icon" src="/media/country_flag/sa.png" alt="nl flag">
+                          </div>
+                          <div class="info-column">
+                              <div class="title">Arabic</div>
+                              <div class="content">Arabic</div>
+                          </div>
+                          <div class="radio-column">
+                              <input type="radio"   id="lang-nl1" name="language"  >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('zh-TW',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/china.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Chinese (Simplified)</div>
+                                <div class="content">Chinese (Simplified)</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+                      
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('zh-CN',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/mo.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Chinese (Traditional)</div>
+                                <div class="content">Chinese (Traditional)</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('nl',this)">
+                          <div class="language-item align-items-center">  
+                              <div class="image-column">
+                                  <img class="flag-icon" src="/media/country_flag/nl.png" alt="nl flag">
+                              </div>
+                              <div class="info-column">
+                                  <div class="title">Netherlands</div>
+                                  <div class="content">Dutch</div>
+                              </div>
+                              <div class="radio-column">
+                                  <input type="radio"   id="lang-nl1" name="language"  >
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="lang selector-item-modal active" onclick="translateLanguage('en',this)">
+                          <div class="language-item align-items-center"> 
+                              <div class="image-column">
+                                  <img class="flag-icon" src="/media/country_flag/united-kingdom.png" alt="nl flag">
+                              </div>
+                              <div class="info-column">
+                                  <div class="title">English</div>
+                                  <div class="content">English</div>
+                              </div>
+                              <div class="radio-column">
+                                  <input type="radio"  checked  id="lang-nl1" name="language"  >
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('fr',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/france.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">French</div>
+                                <div class="content">French</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('it',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/italy.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Italian</div>
+                                <div class="content">Italian</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('ja',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/japan.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Japanese</div>
+                                <div class="content">Japanese</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('pt',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/Portugal.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Portuguese</div>
+                                <div class="content">Portuguese</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('ru',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/ru.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Russian</div>
+                                <div class="content">Russian</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('es',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/Spain.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Spanish</div>
+                                <div class="content">Spanish</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="menu1" class="tab-pane fade">
+              
+                      <div class="country-card-main">
+                          <div class="country-srch-frm">
+                            <div class="srch-form">
+                              <input type="email" class="form-control" onkeyup="GetCurrencyRates(this.value)" placeholder="Search for a currency" id="exampleInputEmail1">
+                            </div>
+                          </div>
+
+                          <div class="selector-modal-content-langs currency-list-card">
+
+                          </div>
+                      </div>
+                      
+                  </div>
+
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<div id="google_translate_element" style="display: none;"></div>
+
+
+<script>
+
+  function deleteCookie(cookie_name) {
+    const domains = ['.toxsl.in', 'esim.toxsl.in', 'localhost'];
+    domains.forEach(domain => {
+        document.cookie = `${cookie_name}=; path=/; domain=${domain}; expires=Thu, 01 Jan 1970 00:00:01 GMT;`;
+    });
+    // Default path delete (just in case)
+    document.cookie = `${cookie_name}=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;`;
+  }
+
+  // Get the user's language code
+    var userLanguageCode = navigator.language || navigator.userLanguage;
+    var languageCode = userLanguageCode.split('-')[0];
+
+    function googleTranslateElementInit() {
+        // Initialize the Google Translate element
+        translateElement = new google.translate.TranslateElement({
+            pageLanguage: languageCode,
+            includedLanguages: 'en,es,fr,ja,ar,nl,pt,it,ru,zh-CN,zh-TW',
+            autoDisplay: false,
+            multilanguagePage: true,
+            disablePoweredBy: true,
+            attribute: false,
+        }, 'google_translate_element');
+
+        // Show the translation element after it has been initialized
+        //document.getElementById('google_translate_element').style.display = 'block';
+    }
+
+    // Load the Google Translate script asynchronously
+    (function() {
+        var gt = document.createElement('script');
+        gt.type = 'text/javascript';
+        gt.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        gt.async = true; // Load asynchronously
+        document.body.appendChild(gt);
+    })();
+
+    function translateLanguage(lang, ele) {
+        const googtrans_cookies = document.cookie.split('; ').filter(cookie => cookie.startsWith('googtrans=')).length;
+        async function handleLanguageChange(lang) {
+            if (lang === 'en' && googtrans_cookies < 2) {
+                await updateActiveLanguage(lang); // Wait for the updateActiveLanguage to complete
+                await deleteCookie('googtrans'); // âœ… fixed: no space
+                location.reload();
+            }else{
+                var selectField = document.querySelector("select.goog-te-combo");
+                if (selectField){
+                    selectField.value = lang;
+                    selectField.dispatchEvent(new Event('change'));
+                    await updateActiveLanguage(lang);
+                    $(ele).find('input[type="radio"]').prop('checked', true);
+                    $(ele).addClass('active');
+                }
+            }
+        }
+        handleLanguageChange(lang)
+      }
+
+
+    function updateActiveLanguage(lang) {
+      return new Promise((resolve, reject) => {
+          var languageItems = document.querySelectorAll('.selector-item-modal');
+          languageItems.forEach(function(item) {
+              item.classList.remove('active');
+          });
+          var activeItem = document.querySelector('.selector-item-modal[onclick="translateLanguage(\'' + lang + '\',this)"]');
+          if (activeItem) {
+              activeItem.classList.add('active');
+              $.ajax({
+                  url: "/change-lang/",
+                  type: 'POST',
+                  asyn:true,
+                  data: {
+                      'lang': lang,
+                  },
+                  success: function(response) {
+                      if (response) {
+                          new_img_url(lang);
+                          $('#currency_modal').modal('toggle');
+                          resolve(); // Resolve the promise when the AJAX call is successful
+                      }
+                      else {
+                        reject('No response received');
+                    }
+                  },
+                  error: function(xhr, status, error) {
+                      console.error(error);
+                      reject(error); // Reject the promise on error
+                  }
+              });
+          }
+          else {
+              resolve(); // Resolve immediately if no active item is found
+          }
+      });
+    }
+
+
+  
+function new_img_url(lang){
+  var img_url = $('.lang_img').prop('src');
+  // $('.currency_symbol').html(lang)
+  if (lang == 'ar'){
+    $('.lang_img').prop('src',"/media/country_flag/sa.png");
+  }
+  else if (lang == 'zh-TW'){
+    $('.lang_img').prop('src',"/media/country_flag/china.png");
+  }
+  else if (lang == 'zh-CN'){
+    $('.lang_img').prop('src',"/media/country_flag/mo.png");
+    }
+  else if (lang == 'nl'){
+    $('.lang_img').prop('src',"/media/country_flag/nl.png");
+  }
+  else if (lang == 'en'){
+    $('.lang_img').prop('src',"/media/country_flag/united-kingdom.png");
+  }
+  else if (lang == 'fr'){
+    $('.lang_img').prop('src',"/media/country_flag/france.png");
+  }
+  else if (lang == 'it'){
+    $('.lang_img').prop('src',"/media/country_flag/italy.png");
+  }
+  else if (lang == 'ja'){
+    $('.lang_img').prop('src',"/media/country_flag/japan.png");
+  }
+  else if (lang == 'pt'){
+    $('.lang_img').prop('src',"/media/country_flag/Portugal.png");
+  }
+  else if (lang == 'ru'){
+    $('.lang_img').prop('src',"/media/country_flag/ru.png");
+  }
+  else if (lang == 'es'){
+    $('.lang_img').prop('src',"/media/country_flag/Spain.png");
+  }
+  else{
+    $('.lang_img').prop('src',"/static/admin-assets/images/default.png");
+  }
+}
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get references to the elements
+        const amountCurrencyButton = document.getElementById('amountCurrency');
+        const currencySymbolButton = document.getElementById('currencySymbol');
+        const firstTab = document.getElementById('home1');
+        const secondTab = document.getElementById('menu1');
+        // Function to activate the first tab
+        function activateFirstTab() {
+            firstTab.classList.add('active', 'show');
+            secondTab.classList.remove('active', 'show');
+            $('.nav-link-toggle-1').addClass('active')
+            $('.nav-link-toggle-2').removeClass('active')
+
+        }
+        // Function to activate the second tab
+        function activateSecondTab() {
+            secondTab.classList.add('active', 'show');
+            firstTab.classList.remove('active', 'show');
+            $('.nav-link-toggle-2').addClass('active')
+            $('.nav-link-toggle-1').removeClass('active')
+
+
+        }
+        // Event listener for amount_currency button
+        amountCurrencyButton.addEventListener('click', function() {
+            activateSecondTab();
+        });
+        // Event listener for currency_symbol button
+        currencySymbolButton.addEventListener('click', function() {
+            activateFirstTab();
+        });
+    });
+</script>
+<style>
+  .header.main-head.position-fixed {
+    position: relative !important;
+  }
+</style>
+
+<div id="main-wrapper">
+    <section class="page-title-wrap">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="page-title d-flex flex-wrap justify-content-between align-items-center">
+                <h2>Terms & Conditions</h2>
+                <ul class="nav">
+                  <li><a href="/">Home</a></li>
+                  <li>Terms & Conditions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="terms-coditions-sec py-5">
+        <div class="container">
+           <div class="row">
+              <div class="col">
+                  
+                  <div class="terms-content">
+                     <h3>Terms And Conditions</h3>
+                     <p>
+                        <p>Last Updated: Jun 2025</p>
+
+<p>&nbsp;</p>
+
+<ol>
+	<li>
+	<p><strong>Introduction</strong></p>
+
+	<p>1.1. We, Roamvy (<strong>&ldquo;Company&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;</strong>) are an eSIM global roaming operator&nbsp;registered in Canada.</p>
+
+	<p>1.2. We operate the website <a href="https://getroamvy.com/">https://roamvy.com/ </a>(the &ldquo;<strong>Website</strong>&rdquo;), the mobile application Roamvy (the &ldquo;<strong>App</strong>&rdquo;), as well as any other related products and services that refer or link to these legal terms (the &ldquo;<strong>Legal Terms</strong>&rdquo;) (collectively, the &ldquo;<strong>Services</strong>&rdquo;).</p>
+
+	<p>1.3. Roamvy sells prepaid eSIM with data service plans based on eSIM technology (the &ldquo;<strong>Service&quot;</strong>). Roamvy may be reselling the Service through its App, Website, partner or through an agent.</p>
+
+	<p>1.4. You can contact us at <a href="mailto:support@getroamvy.com">support@roamvy.com</a></p>
+
+	<p>1.5. These Legal Terms constitute a legally binding agreement (&ldquo;<strong>Agreement</strong>&rdquo;) made between you (the &ldquo;<strong>User</strong>&quot;) and Roamvy, concerning your access to and use of the Service. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</p>
+
+	<p>1.6. Your use of the Services may be subject to other terms and conditions or documents that may be posted on the Website or App from time to time, including those which relate to the purchase of a prepaid eSIM with data service plans based on eSIM technology (the &ldquo;<strong>Service&quot;</strong>). Roamvy may be reselling the Service through a Partner or an Agent.</p>
+
+	<p>1.7. Supplemental terms and conditions or documents that may be posted on the Services from time to time also form part of these Terms and Conditions. We reserve the right, in our sole discretion, to make changes or modifications to these Terms and Conditions at any time and for any reason. We may alert you about any changes by updating the &ldquo;Last updated&rdquo; date of these Terms and Conditions and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Terms and Conditions to stay informed of updates. You will be subject to and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms and Conditions by your continued use of the App after the date such revised Terms are posted.</p>
+
+	<p>1.8. We recommend that you print a copy of these Terms of Use for future reference.</p>
+	</li>
+	<li>
+	<p><strong>Terms of Service</strong></p>
+
+	<p>2.1.&nbsp;<strong>Registration</strong></p>
+
+	<p>2.1.1. The customer may register for the Service through the Roamvy&rsquo;s App or Website or via authorized partners or agents.</p>
+
+	<p>2.1.2. The customer must provide their First and Last name along with a verifiable email address to register. Additionally, customers may upload their profile photo and state their travel preferences voluntarily.</p>
+
+	<p>2.1.3. The customer must accept the General Terms and Conditions as well as the Privacy Policies to complete registration.</p>
+
+	<p>2.2.&nbsp;<strong>Purchase and Activation</strong></p>
+
+	<p>2.2.1. Roamvy may restrict the availability of plans in certain countries. Customers can browse, select, and purchase plans using the Roamvy App or Website&nbsp;or through authorized partners and agents.</p>
+
+	<p>2.2.2. By purchasing the Service, customers confirm they possess an unlocked, eSIM-compatible device, which is required for the Service.</p>
+
+	<p>2.2.3. Upon purchase, customers must download the eSIM onto their device to configure the data plans. The downloaded eSIM will remain on the device after the credit is exhausted or the plan expires. Customers may remove the eSIM in their phone settings at any time; however, it is recommended to retain the eSIM until the plan has been depleted or expired.</p>
+
+	<p>2.2.4. To activate the Service, the customer must first download the eSIM and then activate the associated data plan. This process may require a stable internet connection.</p>
+
+	<p>2.3.&nbsp;<strong>Duration and Termination</strong></p>
+
+	<p>2.3.1. The Service shall commence immediately after the successful download of the eSIM and activation of the associated data plan.</p>
+
+	<p>2.3.2. The duration of the Service depends on the terms of the purchased plan.</p>
+
+	<p>2.3.3. The Service terminates upon full consumption of the plan or upon the expiration of the plan&#39;s duration, whichever occurs first.</p>
+
+	<p>2.3.4. Roamvy reserves the right to suspend the Customer&rsquo;s use of the Service in cases of breach of customer obligations (as outlined below), with or without notice. Roamvy also reserves the right to close accounts and seek payment if the Customer attempts to misuse Roamvy&#39;s credits, promotions, and referrals or violates any laws, statutes, or regulations.</p>
+
+	<p>2.4.&nbsp;<strong>Engagement</strong></p>
+
+	<p>2.4.1. The Service is provided on an &quot;as is&quot; and &quot;as available&quot; basis. Roamvy will take reasonable steps to ensure availability, dependent on its and its partners&#39; network capacity and connectivity. However, Roamvy cannot guarantee network coverage, quality, or availability due to its reliance on external technologies and networks.</p>
+
+	<p>2.4.2. Roamvy may partner with third parties to deliver the Service and is not obligated to inform customers about such partnerships. Customers agree to comply with the terms and conditions of Roamvy&rsquo;s partners.</p>
+
+	<p>2.4.3. The availability of the Service is subject to the network capacity and connectivity provided by Roamvy&rsquo;s partners, for which no guarantees are made.</p>
+
+	<p>2.5.&nbsp;<strong>Customer Obligations</strong></p>
+
+	<p>2.5.1. Customers agree to use the Service responsibly and in compliance with these Terms and Conditions.</p>
+
+	<p>2.5.2. Customers are required to submit true, accurate, and complete registration information and ensure it remains up-to-date.</p>
+
+	<p>2.5.3. Customers are responsible for keeping their passwords confidential and for all activities associated with their accounts. Roamvy reserves the right to modify usernames deemed objectionable.</p>
+
+	<p>2.5.4. The Service must be used in accordance with the laws of the customer&rsquo;s home country, country of residence, and location of use.</p>
+
+	<p>2.5.5. Customers must use the Service solely for personal consumption.</p>
+
+	<p>2.5.6. The Service may not be used for illegal, fraudulent, or abusive actions or any activity that damages or impairs the network.</p>
+
+	<p>2.5.7. Customers agree not to misuse the credits, promotions, or referral programs. Any attempts to undermine the fairness or operation of these programs may result in disqualification and suspension from the Service.</p>
+
+	<p>2.5.8. In cases of violations or deliberate damage to the Service, Roamvy reserves the right to seek damages and pursue legal remedies, including criminal prosecution.</p>
+	</li>
+	<li>
+	<p><strong>Payment Terms</strong></p>
+
+	<p>3.1. Customers may purchase the eSIM through the Roamvy App or Website or through authorized partners and agents. Payment will be processed via authorized agents of Roamvy.</p>
+
+	<p>3.2. All eSIM purchases are prepaid, and prices include applicable indirect taxes unless stated otherwise.</p>
+
+	<p>3.3. Indirect taxes include sales tax, value-added tax, or other similar levies imposed based on the ZIP code provided in the billing information.</p>
+	</li>
+	<li>
+	<p><strong>Returns and Refunds Policy</strong></p>
+
+	<p>4.1. Customers will be charged at the time of eSIM purchase.</p>
+
+	<p>4.2. Refund or change requests can be made before eSIM activation or if a technical issue originating from Roamvy occurs post-activation.</p>
+
+	<p>4.3. Complaints and feedback may be submitted to Roamvy&rsquo;s support team via the Help Center in the app or through email at <a href="mailto:support@getroamvy.com">support@roamvy.com</a></p>
+	</li>
+	<li>
+	<p><strong>Governing Law and Compliance</strong></p>
+
+	<p>5.1. This Agreement, along with any non-contractual obligations arising from or in connection with it, shall be governed by and construed in accordance with the laws of Ontario, Canada. Any disputes shall be resolved exclusively in the courts of Canada.</p>
+
+	<p>5.2. The mandatory rules, regulations, and laws of other states or countries may also apply to your use of the Services.</p>
+
+	<p>5.3. Roamvy may be required to collect certain personal information to comply with legal and regulatory requirements. If such information is requested for compliance purposes, you agree to provide accurate and truthful data. The use of your personal information will remain subject to Roamvy&#39;s Privacy Policy (referenced below).</p>
+	</li>
+	<li>
+	<p><strong>Intellectual Property Rights</strong></p>
+
+	<p>6.1. Unless otherwise specified, the App and Website is the proprietary property of Roamvy. This includes all source code, databases, functionality, software, Site and App designs, audio, video, text, photographs, and graphics within the Site and App (collectively referred to as the &quot;Content&quot;), along with the trademarks, service marks, and logos contained therein (the &quot;Marks&quot;). These are either owned, controlled, or licensed by Roamvy and are protected under Canada&rsquo;s copyright, trademark laws, and applicable international conventions.</p>
+
+	<p>6.2. The Content and Marks are provided on the Website and App &quot;AS IS&quot; solely for your information and personal use. Except as explicitly permitted by these Terms and Conditions, no part of the Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose without Roamvy&#39;s prior written consent.</p>
+
+	<p>6.3. Eligible users are granted a limited, non-transferable license to access and use the Website and App. This license allows you to download or print portions of the Content you have properly accessed solely for your personal, non-commercial use. All rights not expressly granted to you in these Terms and Conditions remain reserved by Roamvy.</p>
+	</li>
+	<li>
+	<p><strong>Privacy Policy</strong></p>
+
+	<p>7.1. Roamvy is committed to protecting customer privacy. Please review the Privacy Policy available on the Roamvy Webiste and App. By using the App, you agree to the terms outlined in the Privacy Policy, which are incorporated into these Terms and Conditions.</p>
+
+	<p>7.2. The Website and App&nbsp;are hosted in Netehrlands. If you access the them&nbsp;from outside&nbsp;where laws governing personal data collection, use, or disclosure differ, you acknowledge that your data will be transferred to and processed in Canada. By continuing to use the App or Services, you consent to this transfer and processing.</p>
+
+	<p>7.3. We may be compelled to disclose your personal details where we are required to do so by a valid order of an authorized governmental representative or court order. By registering for the Services, you consent to such disclosure including potentially to countries which do not provide the same level of data protection as Canada.</p>
+	</li>
+	<li>
+	<p><strong>User -Generated Contributions</strong></p>
+
+	<p>8.1. The Website and App may allow users to engage in various interactive functions such as chats, blogs, message boards, online forums, and other activities. Users may have the opportunity to create, submit, post, display, transmit, publish, distribute, or broadcast content and materials, collectively referred to as &quot;Contributions&quot; (e.g., text, writings, videos, audio, photographs, graphics, comments, suggestions, or personal information).</p>
+
+	<p>8.2. Contributions may be viewable by other users of the App and potentially through third-party websites. Contributions transmitted to the App shall be treated as non-confidential and non-proprietary.</p>
+
+	<p>8.3. By creating or sharing any Contributions, you represent and warrant that:</p>
+
+	<p>&bull; 8.3.1. Your Contributions do not infringe the proprietary rights of any third party (e.g., copyright, patents, trademarks, or trade secrets).</p>
+
+	<p>&bull; 8.3.2. You are the rightful owner or possess all necessary licenses, consents, and permissions to authorize the App and other users to use your Contributions as defined in these Terms.</p>
+
+	<p>&bull; 8.3.3. You have obtained consent or release from all identifiable individuals in your Contributions for the use of their likeness or identity.</p>
+
+	<p>&bull; 8.3.4. Your Contributions are accurate, truthful, and not misleading.</p>
+
+	<p>&bull; 8.3.5. Your Contributions do not constitute unauthorized advertising or spam (e.g., chain letters, pyramid schemes, mass mailings).</p>
+
+	<p>&bull; 8.3.6. Your Contributions are not obscene, violent, harassing, defamatory, or otherwise objectionable.</p>
+
+	<p>&bull; 8.3.7. Your Contributions do not intimidate, disparage, or ridicule anyone.</p>
+
+	<p>&bull; 8.3.8. Your Contributions do not advocate violence, incite harm, or violate privacy and publicity rights.</p>
+
+	<p>&bull; 8.3.9. Your Contributions comply with applicable laws, including but not limited to those regarding child protection, pornography, and personal data.</p>
+
+	<p>&bull; 8.3.10. Your Contributions do not include discriminatory or offensive remarks based on race, gender, nationality, religion, age, or disabilities.</p>
+
+	<p>8.4. Violations of these guidelines may lead to termination or suspension of access to the App, among other consequences.</p>
+	</li>
+	<li>
+	<p><strong>Contribution License</strong></p>
+
+	<p>9.1. By sharing Contributions on the Website and App, you grant Roamvy an unrestricted, irrevocable, perpetual, non-exclusive, royalty-free, fully paid, worldwide license to use, reproduce, distribute, modify, transmit, publicly display, archive, and adapt such Contributions for commercial, advertising, or other purposes.</p>
+
+	<p>9.2. This license applies to all forms, media, and technologies, including those developed in the future. It also includes permission for Roamvy to utilize your name, company name, and trademarks associated with your Contributions.</p>
+
+	<p>9.3. While Roamvy does not claim ownership of your Contributions, you retain full intellectual property rights over them. However, Roamvy is not liable for representations made within your Contributions. You assume sole responsibility for your Contributions and indemnify Roamvy from any related legal actions.</p>
+
+	<p>9.4. Roamvy reserves the right to edit, re-categorize, delete, or pre-screen Contributions at its sole discretion. Roamvy is not obligated to monitor Contributions.</p>
+	</li>
+	<li>
+	<p><strong>Guidelines for Reviews</strong></p>
+
+	<p>10.1 When posting reviews or ratings within the App or Website, or on third-party websites or service you agree to:</p>
+
+	<p>&bull;&nbsp;10.1.1&nbsp;Have firsthand experience with the entity being reviewed.<br />
+	&bull;<strong>&nbsp;</strong>10.1.2&nbsp;Refrain from using offensive, abusive, or hateful language.<br />
+	&bull;&nbsp;10.1.3&nbsp;Avoid discriminatory remarks based on religion, race, gender, sexual orientation, or disability.<br />
+	&bull;&nbsp;10.1.4&nbsp;Ensure reviews do not reference illegal activities.<br />
+	&bull;&nbsp;10.1.5&nbsp;Avoid posting misleading, false, or speculative statements.<br />
+	&bull;&nbsp;10.1.6&nbsp;Avoid affiliations with competitors while posting negative reviews.<br />
+	&bull;&nbsp;10.1.7&nbsp;Refrain from organizing campaigns encouraging mass review postings.</p>
+
+	<p>10.2 Roamvy reserves the right to accept, reject, or remove reviews at its sole discretion. Reviews are personal opinions and are not endorsed by Roamvy. Roamvy assumes no liability for inaccuracies or damages stemming from reviews.</p>
+
+	<p>10.3 By submitting reviews, you grant Roamvy a perpetual, non-exclusive, royalty-free license to modify, transmit, and distribute the content related to reviews.</p>
+	</li>
+	<li>
+	<p>Application License</p>
+
+	<p>11.1&nbsp;<strong>Use License</strong><br />
+	We grant you a revocable, non-exclusive, non-transferable, limited right to install and use the App on wireless electronic devices owned or controlled by you, and to access and use the App strictly in accordance with this license. You agree not to:<br />
+	&bull;&nbsp;11.1.1&nbsp;Decompile, reverse engineer, disassemble, attempt to derive the source code of, or decrypt the App.<br />
+	&bull;&nbsp;11.1.2&nbsp;Modify, adapt, improve, enhance, translate, or create derivative works based on the App.<br />
+	&bull;&nbsp;11.1.3&nbsp;Violate applicable laws, rules, or regulations when using the App.<br />
+	&bull;&nbsp;11.1.4&nbsp;Remove, alter, or obscure proprietary notices (e.g., copyrights or trademarks) posted by us or the App licensors.<br />
+	&bull;&nbsp;11.1.5&nbsp;Use the App for revenue-generating or commercial activities not intended by its design.<br />
+	&bull;&nbsp;11.1.6&nbsp;Share access to the App over networks enabling use by multiple devices/users simultaneously.<br />
+	&bull;&nbsp;11.1.7&nbsp;Develop products, services, or software that compete with or substitute for the App.<br />
+	&bull;&nbsp;11.1.8&nbsp;Use the App to send automated queries or unsolicited commercial emails.<br />
+	&bull;&nbsp;11.1.9&nbsp;Use proprietary information or our intellectual property to design, develop, license, or distribute apps, accessories, or devices intended for use with the App.</p>
+
+	<p>11.2&nbsp;<strong>Apple and Android Devices</strong><br />
+	When downloading the App via Apple Store or Google Play (each an &ldquo;App Distributor&rdquo;), the following terms apply:<br />
+	&bull;&nbsp;11.2.1&nbsp;The license granted is non-transferable and permits use on devices with Apple iOS or Android operating systems under the usage rules of the App Distributor.<br />
+	&bull;&nbsp;11.2.2&nbsp;We provide maintenance and support for the App as required by these Terms and applicable laws; App Distributors are under no obligation to provide such services.<br />
+	&bull;&nbsp;11.2.3&nbsp;In case of warranty-related issues, you may notify the App Distributor for a refund (if applicable); their other obligations regarding warranties are limited as per their terms.<br />
+	&bull;&nbsp;11.2.4&nbsp;You affirm that you are not located in countries subject to U.S. embargoes or designated as &quot;terrorist-supporting,&quot; nor listed on U.S. prohibited/restricted party lists.<br />
+	&bull;&nbsp;11.2.5&nbsp;You must comply with App third-party terms when using the App (e.g., VoIP agreements).<br />
+	&bull;&nbsp;11.2.6&nbsp;App Distributors are third-party beneficiaries of this license and may enforce its terms against you.</p>
+	</li>
+	<li>
+	<p><strong>Social Media</strong></p>
+
+	<p>12.1 The App may allow account linkage with online accounts managed by third-party service providers (&ldquo;Third-Party Accounts&rdquo;). By linking your account, you:<br />
+	&bull;&nbsp;12.1.1&nbsp;Represent and warrant your ability to share Third-Party Account login details without breaching associated agreements or incurring fees.<br />
+	&bull;&nbsp;12.1.2&nbsp;Permit us to access, make available, or store content from Third-Party Accounts (&quot;Social Network Content&quot;) through the App.<br />
+	&bull;&nbsp;12.1.3&nbsp;Acknowledge that privacy settings on Third-Party Accounts may influence visibility of personally identifiable information in the App.<br />
+	&bull;&nbsp;12.1.4&nbsp;Understand that loss of access to a Third-Party Account may result in Social Network Content becoming unavailable.</p>
+
+	<p>You can disable account linkage at any time by contacting us or adjusting settings. We will attempt to delete information obtained via Third-Party Accounts, except for usernames and profile pictures linked to your account.<br />
+	<strong>Note:</strong>&nbsp;Relationships with third-party service providers are governed solely by your agreements with them. We do not review or guarantee the accuracy, legality, or non-infringement of Social Network Content and disclaim responsibility for such content.</p>
+	</li>
+	<li>
+	<p><strong>Submissions</strong></p>
+
+	<p>13.1 Any questions, comments, suggestions, ideas, feedback, or other information regarding the App or Website (&ldquo;Submissions&rdquo;) provided by you shall be non-confidential and will become Roamvy&rsquo;s sole property. Roamvy will own exclusive rights, including intellectual property rights, and may use and distribute Submissions for any lawful purpose without acknowledgment or compensation.<br />
+	13.2 You waive all moral rights to Submissions and warrant that they are original or that you have the right to provide them. Roamvy is not liable for alleged infringement or misappropriation claims related to Submissions.</p>
+	</li>
+	<li>
+	<p><strong>Third-party Websites and Content</strong></p>
+
+	<p>14.1 The App may contain links to external websites (&ldquo;Third-Party Websites&rdquo;) or provide access to content created by third parties, including articles, photographs, text, graphics, videos, designs, software, and other materials (&ldquo;Third-Party Content&rdquo;).<br />
+	14.2 Roamvy does not investigate, monitor, or verify the accuracy, appropriateness, or completeness of Third-Party Websites or Third-Party Content. Roamvy disclaims responsibility for any Third-Party Websites accessed through the App or any Third-Party Content made available through or installed from the App, including content quality, reliability, privacy practices, or policies associated with such third-party resources.<br />
+	14.3 The inclusion of links to Third-Party Websites or the availability of Third-Party Content does not imply endorsement or approval by Roamvy. Accessing Third-Party Websites or using/installing Third-Party Content is undertaken at your own risk, and these Terms and Conditions no longer apply once you leave the App.<br />
+	14.4 Users are advised to review the terms, conditions, and privacy policies of any external websites or App they access through the App. Purchases made via Third-Party Websites are transactions between the user and the respective third party, and Roamvy assumes no responsibility or liability in relation to such purchases.<br />
+	14.5 By using Third-Party Websites or interacting with Third-Party Content, you acknowledge that Roamvy does not endorse third-party products or services. You agree to hold Roamvy harmless from any harm or losses caused by such interactions, including purchases or contact with third-party platforms or content.</p>
+	</li>
+	<li>
+	<p><strong>App Management</strong></p>
+
+	<p>15.1 Roamvy reserves the right, but not the obligation, to:<br />
+	&bull;&nbsp;15.1.1&nbsp;Monitor the App for violations of these Terms and Conditions.<br />
+	&bull;&nbsp;15.1.2&nbsp;Take legal action, including reporting violations to law enforcement authorities, against users who breach these Terms or applicable laws.<br />
+	&bull;&nbsp;15.1.3&nbsp;Restrict access to, limit the availability of, or disable any Contributions, files, or portions thereof at Roamvy&rsquo;s sole discretion without prior notice.<br />
+	&bull;&nbsp;15.1.4&nbsp;Remove or disable files and content deemed excessive in size or burdensome to Roamvy&rsquo;s systems.<br />
+	&bull;&nbsp;15.1.5&nbsp;Manage the App in a manner designed to safeguard Roamvy&rsquo;s rights and property while ensuring the App proper functionality.</p>
+
+	<p>15.2 Roamvy maintains full discretion over the management of the App and any enforcement actions deemed necessary to protect its interests.</p>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+                     </p>
+                  </div>
+                  
+              </div>
+           </div>
+        </div>
+     </section>
+</div>
+
+<footer class="footer-area pt-5">
+    <div class="footer-widget">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between flex-wrap border-bottom mb-lg-5 mb-2 pb-lg-4 pb-2 gap-3">
+                <div class="footer-left-logo ">
+                      <a href="/" class="footer-logo mb-0">
+                            <img src="/static/admin-assets/images/logo.png">
+                        </a>
+                </div>
+                <div class="store-icon d-flex align-items-center gap-3">
+                    <div class="cming-badge">
+                        Coming Soon
+                    </div>
+                    <a href="#">
+                        <img src="/static/admin-assets/images/apple-store.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/static/admin-assets/images/google-store.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row footer-widget-wrapper pt-100 pb-70">
+                <!-- <div class="col">
+                    <div class="footer-widget-box about-us">
+                        <a href="/" class="footer-logo">
+                            <img src="/static/admin-assets/images/logo.png">
+                        </a>
+                        <p class="mb-3">
+                            "I've had issues with dropped calls and poor coverage in the  past, but since switching to [Provider], my phone has been working  perfectly
+                        </p>
+                    </div>
+                </div>       -->
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Explore</h4>                    
+                        <ul class="footer-list">
+                            
+                            
+                                    
+                                    <li><a href="/" onclick="Loader()">Home</a></li>
+                                    
+                            
+                                    
+                                    <li><a href="/destinations/" onclick="Loader()">Destinations</a></li>
+                                    
+                            
+                                    
+                                    <li><a href="/compatibility/" onclick="Loader()">Compatibility</a></li>
+                                    
+                            
+                                    
+                                    <li><a href="/affiliate/partner-with-us/" onclick="Loader()">Partner with us</a></li>
+                                    
+                            
+                                    
+                                    <li><a href="/help-center/" onclick="Loader()">Help Center</a></li>
+                                    
+                            
+                                    
+                                    <li><a href="/blog-list/" onclick="Loader()">Blog</a></li>
+                                    
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Countries</h4>
+                        <ul class="footer-list">
+                            
+                            
+                                
+                                    <li>
+                                        <a href="/country-packages/united-states/">
+                                            <i class="fas fa-angle-right"></i>United States
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/canada/">
+                                            <i class="fas fa-angle-right"></i>Canada
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/mexico/">
+                                            <i class="fas fa-angle-right"></i>Mexico
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/france/">
+                                            <i class="fas fa-angle-right"></i>France
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/italy/">
+                                            <i class="fas fa-angle-right"></i>Italy
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/spain/">
+                                            <i class="fas fa-angle-right"></i>Spain
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/turkey/">
+                                            <i class="fas fa-angle-right"></i>Turkey
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/united-arab-emirates/">
+                                            <i class="fas fa-angle-right"></i>United Arab Emirates
+                                        </a>
+                                    </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Quick Links</h4>
+                        <ul class="footer-list">
+                            
+                            
+                                
+                                    
+                                    <li><a href="/about-us/" onclick="Loader()">About Us</a></li>
+                                    
+                            
+                                
+                                    
+                                    <li><a href="/contact-us/" onclick="Loader()">Contact Us</a></li>
+                                    
+                            
+                                
+                                    
+                                    <li><a href="/refund-policy/" onclick="Loader()">Refund Policy</a></li>
+                                    
+                            
+                                
+                                    
+                                    <li><a href="/cookies-policy/" onclick="Loader()">Cookie Policy</a></li>
+                                    
+                            
+                                
+                                    
+                                    <li><a href="/privacy-policy/" onclick="Loader()">Privacy Policy</a></li>
+                                    
+                            
+                                
+                                    
+                                    <li><a href="/terms-and-conditions/" onclick="Loader()">Terms and Conditions</a></li>
+                                    
+                            
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Get In Touch </h4>
+                        <ul class="footer-social d-flex flex-column">
+                                                        
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=61577800799386" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                        </svg>
+                                    </span>
+                                    Facebok
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/roamvy/" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                        </svg>
+                                    </span>
+                                    Instagram
+                                </a>
+                            </li>
+                             <li>
+                                <a href="https://www.tiktok.com/@roamvy" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                                        </svg>
+                                    </span>
+                                    Tiktkok
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/RoamvyeSIM" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                        </svg>
+                                    </span>
+                                    Twitter
+                                </a>
+                            </li>
+                          
+                            <li>
+                                <a href="https://www.linkedin.com/company/roamvy" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                        </svg>
+                                    </span>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-xl-between justify-content-center gap-3 flex-wrap">
+                <div class="copyright-link">
+                    <p class="mb-0 text-center">Copyright © <span id="full_year"></span><a
+                        href="/"> Roamvy </a> | All Rights Reserved.
+                    </p>
+                </div>
+                <div class="payment-icons">
+                    <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center justify-content-center flex-wrap gap-2">
+                        <li class="p-1">
+                            <a href="#" >
+                                <img src="/static/admin-assets/images/visa.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/mastercard.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/paypal-logo.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/amex.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/apple.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/google-pay.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/stripe.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+
+
+<script src="/static/admin-assets/js/jquery-3.6.0.min.js"></script>
+<script src="/static/admin-assets/js/bootstrap.bundle.min.js"></script>
+<script src="/static/admin-assets/js/jquery.fancybox.min.js"></script>
+<!-- Swiper JS -->
+<script src="/static/admin-assets/js/swiper-js/swiper-bundle.min.js"></script>
+<script src="/static/admin-assets/js/jquery.slimscroll.min.js"></script>
+<script src="/static/admin-assets/js/jquery.dataTables.min.js"></script>
+<script src="/static/admin-assets/js/dataTables.bootstrap4.min.js"></script>
+<script src="/static/admin-assets/js/script.js"></script>
+<script src="/static/admin-assets/js/validate.js"></script>
+<script src="/static/admin-assets/js/additional-methods.min.js"></script>
+<script src="/static/admin-assets/js/customized-js/common.js"></script>
+<script src="/static/admin-assets/js/customized-js/sweet-alerts.js"></script>
+<script src="/static/admin-assets/js/sweetalert2.all.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNO66KAIKXElPS8PiPQhMcncpy4-rcjzQ&callback=initMap"async defer></script>
+
+
+<script>
+   function initMap() {
+       var centerCoordinates = new google.maps.LatLng(37.6, -95.665);
+       var defaultOptions = { center: centerCoordinates, zoom: 4 }
+   }
+</script>
+<script>
+    function locate(){
+        const options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0,
+        };
+        function success(position) {
+            var currentLatitude = position.coords.latitude;
+            var currentLongitude = position.coords.longitude;
+            try{
+                $.ajax({
+                    url: "/save-lat-lang/",
+                    type: 'POST',
+                    asyn:true,
+                    data: {
+                        'lat': currentLatitude,
+                        'long':currentLongitude
+                    },
+                    success: function(response) {
+                        response=response
+                        localStorage.setItem("location",true)
+                        window.location.reload()
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            }
+            catch(err){
+                console.log(err)
+            }
+        }
+        function error(err) {
+            console.log(`ERROR(${err.code}): ${err.message}`);
+        }
+        navigator.geolocation.getCurrentPosition(success, error, options);
+    }
+    var location_saved=localStorage.getItem("location")
+        if (!location_saved){
+            locate()
+        }
+</script>
+
+</body>
+
+</html>

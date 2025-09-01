@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="Roamvy">
+    <meta name="keywords"
+      content="Pay-as-you-go travel internet in 200+ destinations. In-app voice calls. No plans, no expirations. Just easy, affordable, reliable mobile connectivity for travelers.">
+    <meta name="author" content="toxsltech">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Roamvy</title>
+    <link rel="shortcut icon" href="/static/admin-assets/images/favicon.ico" />
+
+    <link rel="stylesheet" href="/static/admin-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/all.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="/static/admin-assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/static/admin-assets/css/flash.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/loader.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="/static/admin-assets/css/landing.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/landing-new.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/user.css">
+    <link rel="stylesheet" href="/static/admin-assets/css/frontend-responsive.css">
+</head>
+<body>
+
+
+
+<script src="/static/admin-assets/js/moment.min.js"></script>
+<script src="/static/admin-assets/js/customized-js/moment.js"></script>
+
+
+
+<div class="main-wrapper main-page-header position-relative">
+  
+    <div class="header main-head position-relative">
+  
+      <div class="container">
+        <div class="d-flex align-items-center gap-2"> 
+            <div class="header-left active outer-header">
+              <a href="/" class="navbar-brand logo logo-normal d-flex align-items-center"  onclick="Loader()">
+                <img src="/static/admin-assets/images/logo.png">
+              </a>
+            </div>
+            <div class="d-flex align-items-center justify-content-center w-100">
+              <nav class="navbar navbar-expand-lg bg-transparent h-100 d-none d-lg-none d-xl-block">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                  <ul class="navbar-nav mx-auto">
+                    
+                    
+                        
+                          <li class="nav-item"><a class="nav-link " href="/what-an-esim/" onclick="Loader()">What is an eSIM</a></li>
+                        
+                    
+                        
+                          <li class="nav-item"><a class="nav-link " href="/destinations/" onclick="Loader()">Destinations</a></li>
+                        
+                    
+                        
+                          <li class="nav-item"><a class="nav-link "  href="/compatibility/" onclick="Loader()">Compatibility</a></li>
+                        
+                    
+                        
+                          <li class="nav-item"><a class="nav-link "  href="/affiliate/partner-with-us/" onclick="Loader()">Partner with us</a></li>
+                        
+                    
+                        
+                          <li class="nav-item"><a class="nav-link "  href="/help-center/" onclick="Loader()">Help Center</a></li>
+                        
+                    
+                        
+                          <li class="nav-item"><a class="nav-link "  href="/blog-list/" onclick="Loader()">Blog</a></li>
+                        
+                    
+                  </ul>
+
+                </div>
+              </nav>
+            </div>
+            
+            <div class="d-flex gap-3 gap-lg-2">
+              <ul class="d-flex align-items-center gap-lg-3 gap-3">
+                  
+                    
+                    <div class="login-btn position-relative me-2 d-lg-block d-none">
+                      <a href="/accounts/login/" class="text-capitalize">login</a>
+                    </div>
+                    
+                    <li class="nav_item d-lg-none d-block">
+                      <a href="/accounts/signup/" class="text-dark auth-btn">
+                          <i class="far fa-user"></i>
+                      </a>
+                    </li>
+                  
+              </ul>
+
+              
+                  <span class="d-lg-flex d-none nav-item d-flex amount_currency amount-currency align-items-center cardnew position-relative"  onclick="GetCurrencyRates('')" >
+                    <span class="currency_symbol text-dark skiptranslate" data-bs-toggle="modal" data-bs-target="#currency_modal" id="currencySymbol">
+                    
+                    <img class='lang_img' lang='en' src="/media/country_flag/united-kingdom.png"/>
+                    
+                    </span>
+                    
+                    <span class="text-dark nav-link py-0 px-1"> | </span>
+                    <a class="text-dark skiptranslate" data-bs-toggle="modal" data-bs-target="#currency_modal" id="amountCurrency" >
+                      USD
+                    </a>
+                  </span>
+                  <ul class="list-unstyled d-flex align-items-center">
+                   <li class="nav_item">
+                  
+                  <a class="hdr-cart-btn" href="/my-cart/">
+                  
+                    <img src="/static/admin-assets/images/cart.png" />
+                    <span class="cart-count">
+                      0
+                    </span>
+                  </a>
+                </li>
+                </ul>
+            </div>
+            
+            <div class="d-flex align-items-center justify-content-end d-xl-none gap-3">
+                <a class="btn btn-theme bars-btn ms-sm-3 ms-1" data-bs-toggle="offcanvas"
+                    href="#top_navbar_offcanvas" role="button" aria-controls="top_navbar_offcanvas">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  <!--User links offcanvas-->
+  <div class="offcanvas offcanvas-end mobile-menu-card user-mobile" tabindex="-1" id="user_dropdown_offcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body">
+      <div class="mobile-menu">
+        <div class="sider-card">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="side-profile-card">
+            
+            <div class="side-profile-dis">
+              
+                <div class="side-profile-card">
+                    <span class="profile-img">
+                      <img src="/static/admin-assets/images/logo.png">
+                    </span>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="dashboard_menu mobile-dash-menu">
+
+          <ul>
+            <li>
+              <a class="active" href="/users/user-profile/"><span><i class="far fa-user"></i></span>
+                My Profile
+              </a>
+            </li>
+            
+         
+          
+            
+
+            <li>
+              <a href="/users/my-esims/">
+                <span><i class="far fa-list-alt"></i></span>My eSIMs
+              </a>
+            </li>
+            
+
+            <li>
+              <a href="/users/user-order/"><span><i class="fas fa-list"></i></span>
+               My Orders
+              </a>
+            </li>
+            <li>
+              <a href="/users/rewards/"><span><i class="far fa-money-bill-alt"></i></span>
+              My Rewards
+              </a>
+            </li>
+
+            <li>
+              <a href="/users/user-cards/"><span><i class="fas fa-credit-card"></i></span>
+               Saved Cards
+              </a>
+            </li>
+          
+            <li>
+              <a href="/users/user-notifications/"><span><i class="far fa-bell"></i></span>
+               Notifications
+              </a>
+            </li>
+            <li>
+              <a href="/users/support-queries/"><span><i class="fas fa-user-headset"></i></span>
+               Support
+              </a>
+            </li>
+            <li>
+              <a href="/users/change-password/"><span><i class="far fa-key"></i></span>
+               Change Password
+              </a>
+            </li>
+
+            
+
+            <li>
+              <a href="/users/user-delete/"><span><i class="far fa-trash-alt"></i></span>
+               Delete Account
+              </a>
+            </li>
+    
+            <li>
+              <a href="/accounts/logout/" message="Are you sure you want to logout?" class="logout_confirm"><span><i class="fas fa-sign-out-alt"></i></span>
+                Logout
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Top Navbar offcanvas-->
+  <div class="offcanvas offcanvas-start mobile-menu-card" tabindex="-1" id="top_navbar_offcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body">
+        <div class="mobile-menu">
+            <div class="sider-card">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                
+                <div class="side-profile-card">
+                    <span class="profile-img">
+                      <img src="/static/admin-assets/images/logo.png">
+                    </span>
+                </div>
+                
+            </div>
+
+            <div class="side-bar-links">
+                <ul class="side-link-list">
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link " href="/what-an-esim/" onclick="Loader()">What is an eSIM</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link " href="/destinations/" onclick="Loader()">Destinations</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/compatibility/" onclick="Loader()">Compatibility</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/affiliate/partner-with-us/" onclick="Loader()">Partner with us</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/help-center/" onclick="Loader()">Help Center</a>
+                        
+                    
+                    <li class="nav-item">
+                        
+                          <a class="nav-link "  href="/blog-list/" onclick="Loader()">Blog</a>
+                        
+                    
+                      
+                  <span class="d-lg-none d-flex nav-item d-flex amount_currency amount-currency align-items-center cardnew position-relative"  onclick="GetCurrencyRates('')" >
+                      <span class="currency_symbol text-dark skiptranslate" data-bs-toggle="modal" data-bs-target="#currency_modal" id="currencySymbol">
+                      
+                      <img class='lang_img' lang='en' src="/media/country_flag/united-kingdom.png"/>
+                      
+                      </span>
+                    
+                      <span class="text-dark nav-link py-0 px-1"> | </span>
+                        <a class="text-dark skiptranslate" data-bs-toggle="modal" data-bs-target="#currency_modal" id="amountCurrency" >
+                          USD
+                        </a>
+                    </span>
+                    
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- supported Countries Modal -->
+  <div class="modal fade commonmodal lan_cur_modal" id="currency_modal" tabindex="-1" aria-labelledby="choosecard" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+      
+              <span class="close-modal" data-bs-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+              </span>
+            </div>
+
+            <div class="modal-body">
+
+              <ul class="nav nav-tabs mb-4">
+                <li><a class="nav-link-toggle-1"  data-bs-toggle="tab" href="#home1"><i class="fas fa-globe-americas"></i>&nbsp; Language</a></li>
+                <li><a class="nav-link-toggle-2" data-bs-toggle="tab"  href="#menu1"><i class="fas fa-dollar-sign"></i>&nbsp; Currency</a></li>
+              </ul>
+
+              <div class="tab-content pb-5">
+                
+                  <div id="home1" class="tab-pane fade">
+                    <div class="selector-modal-content-langs">
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('ar',this)">
+                        <div class="language-item align-items-center">  
+                          <div class="image-column">
+                              <img class="flag-icon" src="/media/country_flag/sa.png" alt="nl flag">
+                          </div>
+                          <div class="info-column">
+                              <div class="title">Arabic</div>
+                              <div class="content">Arabic</div>
+                          </div>
+                          <div class="radio-column">
+                              <input type="radio"   id="lang-nl1" name="language"  >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('zh-TW',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/china.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Chinese (Simplified)</div>
+                                <div class="content">Chinese (Simplified)</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+                      
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('zh-CN',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/mo.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Chinese (Traditional)</div>
+                                <div class="content">Chinese (Traditional)</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('nl',this)">
+                          <div class="language-item align-items-center">  
+                              <div class="image-column">
+                                  <img class="flag-icon" src="/media/country_flag/nl.png" alt="nl flag">
+                              </div>
+                              <div class="info-column">
+                                  <div class="title">Netherlands</div>
+                                  <div class="content">Dutch</div>
+                              </div>
+                              <div class="radio-column">
+                                  <input type="radio"   id="lang-nl1" name="language"  >
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="lang selector-item-modal active" onclick="translateLanguage('en',this)">
+                          <div class="language-item align-items-center"> 
+                              <div class="image-column">
+                                  <img class="flag-icon" src="/media/country_flag/united-kingdom.png" alt="nl flag">
+                              </div>
+                              <div class="info-column">
+                                  <div class="title">English</div>
+                                  <div class="content">English</div>
+                              </div>
+                              <div class="radio-column">
+                                  <input type="radio"  checked  id="lang-nl1" name="language"  >
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('fr',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/france.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">French</div>
+                                <div class="content">French</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('it',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/italy.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Italian</div>
+                                <div class="content">Italian</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('ja',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/japan.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Japanese</div>
+                                <div class="content">Japanese</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('pt',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/Portugal.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Portuguese</div>
+                                <div class="content">Portuguese</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('ru',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/ru.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Russian</div>
+                                <div class="content">Russian</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="lang selector-item-modal " onclick="translateLanguage('es',this)">
+                        <div class="language-item align-items-center">  
+                            <div class="image-column">
+                                <img class="flag-icon" src="/media/country_flag/Spain.png" alt="nl flag">
+                            </div>
+                            <div class="info-column">
+                                <div class="title">Spanish</div>
+                                <div class="content">Spanish</div>
+                            </div>
+                            <div class="radio-column">
+                                <input type="radio"   id="lang-nl1" name="language"  >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="menu1" class="tab-pane fade">
+              
+                      <div class="country-card-main">
+                          <div class="country-srch-frm">
+                            <div class="srch-form">
+                              <input type="email" class="form-control" onkeyup="GetCurrencyRates(this.value)" placeholder="Search for a currency" id="exampleInputEmail1">
+                            </div>
+                          </div>
+
+                          <div class="selector-modal-content-langs currency-list-card">
+
+                          </div>
+                      </div>
+                      
+                  </div>
+
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<div id="google_translate_element" style="display: none;"></div>
+
+
+<script>
+
+  function deleteCookie(cookie_name) {
+    const domains = ['.toxsl.in', 'esim.toxsl.in', 'localhost'];
+    domains.forEach(domain => {
+        document.cookie = `${cookie_name}=; path=/; domain=${domain}; expires=Thu, 01 Jan 1970 00:00:01 GMT;`;
+    });
+    // Default path delete (just in case)
+    document.cookie = `${cookie_name}=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;`;
+  }
+
+  // Get the user's language code
+    var userLanguageCode = navigator.language || navigator.userLanguage;
+    var languageCode = userLanguageCode.split('-')[0];
+
+    function googleTranslateElementInit() {
+        // Initialize the Google Translate element
+        translateElement = new google.translate.TranslateElement({
+            pageLanguage: languageCode,
+            includedLanguages: 'en,es,fr,ja,ar,nl,pt,it,ru,zh-CN,zh-TW',
+            autoDisplay: false,
+            multilanguagePage: true,
+            disablePoweredBy: true,
+            attribute: false,
+        }, 'google_translate_element');
+
+        // Show the translation element after it has been initialized
+        //document.getElementById('google_translate_element').style.display = 'block';
+    }
+
+    // Load the Google Translate script asynchronously
+    (function() {
+        var gt = document.createElement('script');
+        gt.type = 'text/javascript';
+        gt.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        gt.async = true; // Load asynchronously
+        document.body.appendChild(gt);
+    })();
+
+    function translateLanguage(lang, ele) {
+        const googtrans_cookies = document.cookie.split('; ').filter(cookie => cookie.startsWith('googtrans=')).length;
+        async function handleLanguageChange(lang) {
+            if (lang === 'en' && googtrans_cookies < 2) {
+                await updateActiveLanguage(lang); // Wait for the updateActiveLanguage to complete
+                await deleteCookie('googtrans'); // âœ… fixed: no space
+                location.reload();
+            }else{
+                var selectField = document.querySelector("select.goog-te-combo");
+                if (selectField){
+                    selectField.value = lang;
+                    selectField.dispatchEvent(new Event('change'));
+                    await updateActiveLanguage(lang);
+                    $(ele).find('input[type="radio"]').prop('checked', true);
+                    $(ele).addClass('active');
+                }
+            }
+        }
+        handleLanguageChange(lang)
+      }
+
+
+    function updateActiveLanguage(lang) {
+      return new Promise((resolve, reject) => {
+          var languageItems = document.querySelectorAll('.selector-item-modal');
+          languageItems.forEach(function(item) {
+              item.classList.remove('active');
+          });
+          var activeItem = document.querySelector('.selector-item-modal[onclick="translateLanguage(\'' + lang + '\',this)"]');
+          if (activeItem) {
+              activeItem.classList.add('active');
+              $.ajax({
+                  url: "/change-lang/",
+                  type: 'POST',
+                  asyn:true,
+                  data: {
+                      'lang': lang,
+                  },
+                  success: function(response) {
+                      if (response) {
+                          new_img_url(lang);
+                          $('#currency_modal').modal('toggle');
+                          resolve(); // Resolve the promise when the AJAX call is successful
+                      }
+                      else {
+                        reject('No response received');
+                    }
+                  },
+                  error: function(xhr, status, error) {
+                      console.error(error);
+                      reject(error); // Reject the promise on error
+                  }
+              });
+          }
+          else {
+              resolve(); // Resolve immediately if no active item is found
+          }
+      });
+    }
+
+
+  
+function new_img_url(lang){
+  var img_url = $('.lang_img').prop('src');
+  // $('.currency_symbol').html(lang)
+  if (lang == 'ar'){
+    $('.lang_img').prop('src',"/media/country_flag/sa.png");
+  }
+  else if (lang == 'zh-TW'){
+    $('.lang_img').prop('src',"/media/country_flag/china.png");
+  }
+  else if (lang == 'zh-CN'){
+    $('.lang_img').prop('src',"/media/country_flag/mo.png");
+    }
+  else if (lang == 'nl'){
+    $('.lang_img').prop('src',"/media/country_flag/nl.png");
+  }
+  else if (lang == 'en'){
+    $('.lang_img').prop('src',"/media/country_flag/united-kingdom.png");
+  }
+  else if (lang == 'fr'){
+    $('.lang_img').prop('src',"/media/country_flag/france.png");
+  }
+  else if (lang == 'it'){
+    $('.lang_img').prop('src',"/media/country_flag/italy.png");
+  }
+  else if (lang == 'ja'){
+    $('.lang_img').prop('src',"/media/country_flag/japan.png");
+  }
+  else if (lang == 'pt'){
+    $('.lang_img').prop('src',"/media/country_flag/Portugal.png");
+  }
+  else if (lang == 'ru'){
+    $('.lang_img').prop('src',"/media/country_flag/ru.png");
+  }
+  else if (lang == 'es'){
+    $('.lang_img').prop('src',"/media/country_flag/Spain.png");
+  }
+  else{
+    $('.lang_img').prop('src',"/static/admin-assets/images/default.png");
+  }
+}
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get references to the elements
+        const amountCurrencyButton = document.getElementById('amountCurrency');
+        const currencySymbolButton = document.getElementById('currencySymbol');
+        const firstTab = document.getElementById('home1');
+        const secondTab = document.getElementById('menu1');
+        // Function to activate the first tab
+        function activateFirstTab() {
+            firstTab.classList.add('active', 'show');
+            secondTab.classList.remove('active', 'show');
+            $('.nav-link-toggle-1').addClass('active')
+            $('.nav-link-toggle-2').removeClass('active')
+
+        }
+        // Function to activate the second tab
+        function activateSecondTab() {
+            secondTab.classList.add('active', 'show');
+            firstTab.classList.remove('active', 'show');
+            $('.nav-link-toggle-2').addClass('active')
+            $('.nav-link-toggle-1').removeClass('active')
+
+
+        }
+        // Event listener for amount_currency button
+        amountCurrencyButton.addEventListener('click', function() {
+            activateSecondTab();
+        });
+        // Event listener for currency_symbol button
+        currencySymbolButton.addEventListener('click', function() {
+            activateFirstTab();
+        });
+    });
+</script>
+<style>
+  .header.main-head.position-fixed {
+    position: relative !important;
+  }
+</style>
+
+<div id="main-wrapper" >
+    <section class="page-title-wrap">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="page-title d-flex flex-wrap justify-content-between align-items-center">
+                <h2>Privacy Policy</h2>
+                <ul class="nav">
+                  <li><a href="/">Home</a></li>
+                  <li>Privacy Policy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+   
+      <section class="terms-coditions-sec py-5">
+        <div class="container">
+           <div class="row">
+              <div class="col">
+               
+                  <div class="terms-content">
+                     <h3>Privacy Policy</h3>
+                     <p>
+                        <p>Last Updated: Jun 2025</p>
+
+<p>&nbsp;</p>
+
+<p>Roamvy (&ldquo;<strong>Company</strong>&rdquo;, &ldquo;<strong>we</strong>&rdquo;, &ldquo;<strong>us</strong>&rdquo;, &ldquo;<strong>our</strong>&rdquo;) a company registered in Canada.</p>
+
+<p>We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact our support team through the Help Center located under your profile page.</p>
+
+<p>When you visit our website&nbsp;<a href="https://getroamvy.com/">https://roamvy.com/ </a>(the &ldquo;<strong>Website</strong>&rdquo;), use our mobile application, as the case may be (the &ldquo;<strong>App</strong>&rdquo;) and more generally, use any of our services (the &ldquo;<strong>Services</strong>&rdquo;, which include the Website and App), we appreciate that you are trusting us with your personal information. We take your privacy very seriously.</p>
+
+<p>In this privacy notice, we explain what information we collect, how we use it and what your rights are. We hope you will take some time to read through it carefully, as it is important.</p>
+
+<p>If there are any terms in this privacy notice that you do not agree with, please discontinue the use of our Services immediately.</p>
+
+<p>This privacy notice applies to all information collected through our Services, as well as any related services, sales, marketing or events.</p>
+
+<p>&nbsp;</p>
+
+<p>Table of Contents:</p>
+
+<p>1. What information do we collect?</p>
+
+<p>2. How do we use your information?</p>
+
+<p>3. Will your information be shared with anyone?</p>
+
+<p>4. Do we use cookies and other tracking technologies?</p>
+
+<p>5. How do we handle your social logins?</p>
+
+<p>6. What is our stance on third-party websites?</p>
+
+<p>7. How long do we keep your information?</p>
+
+<p>8. How do we keep your information safe?</p>
+
+<p>9. What are your privacy rights?</p>
+
+<p>10. Children&rsquo;s Policy</p>
+
+<p>11. Controls for do-not-track features</p>
+
+<p>12. Do California residents have specific privacy rights?</p>
+
+<p>13. Do we make updates to this notice?</p>
+
+<p>14. How can you contact us about this notice?</p>
+
+<p>&nbsp;</p>
+
+<p><strong>1. What information do we collect?</strong></p>
+
+<p><strong>1.1. Personal information you disclose to us</strong></p>
+
+<p>In Short: We collect information that you provide to us.</p>
+
+<p>We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services (such as by posting messages in our online forums or entering competitions, contests or giveaways) or otherwise when you contact us.</p>
+
+<p>The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make and the products and features you use.</p>
+
+<p>The personal information we collect may include the following:</p>
+
+<p>Personal Information Provided by You: We collect legal first and last name; email addresses; usernames; passwords; .</p>
+
+<p>We collect non-mandatory personal information such as gender, city, profile pictures, date of birth. We securely stored your personal data on cloud servers located in Netherlands.</p>
+
+<p>Payment Data: We may collect data necessary to process your payment if you make purchases, such as your payment instrument number (including your credit card number), and the security code associated with your payment instrument. &zwj;All payment data is collected and stored on our behalf by industry leading payment company Stripe. You may find their Privacy policy link(s) here: <a href="https://stripe.com/privacy">https://stripe.com/privacy</a></p>
+
+<p>Social Media Login Data: We may provide you with the option to register with us using your existing social media account details, like Google, Facebook, Apple or other social media account. If you choose to register in this way, we will collect the information described in the section called &ldquo;HOW DO WE HANDLE YOUR SOCIAL LOGINS&rdquo; below.</p>
+
+<p>All personal information that you provide to us must be true, complete and accurate, and you must notify us of any changes to such personal information.</p>
+
+<p>In Short: Some information &mdash; such as your Internet Protocol (IP) address and/or browser and device characteristics &mdash; is collected automatically when you visit our Services.</p>
+
+<p>We automatically collect certain information when you visit, use or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about who and when you use our Services and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.</p>
+
+<p>Like many businesses, we also collect information through cookies and similar technologies.</p>
+
+<p>The information we collect includes:</p>
+
+<p>&zwj;Log and Usage Data. Log and usage data is service-related, diagnostic usage and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called &lsquo;crash dumps&rsquo;) and hardware settings).</p>
+
+<p>Device Data. We collect device data such as information about your computer, phone, tablet or other device you use to access the Services. Depending on the device used, this device data may include information such as your IP address (or proxy server), device application identification numbers, location, browser type, hardware model, internet service provider and/or mobile carrier, operating system configuration information.</p>
+
+<p>Location Data. We collect data such as information about your device&rsquo;s location, which can be either precise or imprecise. How much information we collect depends on the type of settings of the device you use to access the Services. For example, we may use GPS and other technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to collect this information either by refusing access to the information or by disabling your Locations settings on your device. Note however, if you choose to opt out, you may not be able to use certain parts of the Services.</p>
+
+<p><strong>1.2. Information automatically collected</strong></p>
+
+<p>In Short: We collect information regarding your geo-location, mobile device, push notifications, when you use our App. If you use our App, we also collect the following information:</p>
+
+<p>Geo-Location Information. We may request access or permission to and track location-based information from your mobile device, either continuously or while you are using our App, to provide certain location-based services. If you wish to change our access or permissions, you may do so in your device&rsquo;s settings.</p>
+
+<p>&zwj;Mobile Device Access. We may request access or permission to certain features from your mobile device, including your mobile device&rsquo;s camera, storage, and other features. If you wish to change our access or permissions, you may do so in your device&rsquo;s settings.&zwj;</p>
+
+<p>Mobile Device Data. We automatically collect device information (such as your mobile device ID, model and manufacturer), operating system, version information and system configuration information, device and application identification numbers, browser type and version, hardware model Internet service provider and/or mobile carrier, and Internet Protocol (IP) address (or proxy server). If you are using our App, we may also collect information about the phone network associated with your mobile device, your mobile device&rsquo;s operating system or platform, the type of mobile device you use, your mobile device&rsquo;s unique device ID and information about the features of our App you accessed.</p>
+
+<p>App interaction Data. When you access the Roamvy application, we automatically record and store certain information about the actions that you perform on the app (such as signup, shop page view, checkout and etc). We use Firebase, an app analysis service of Google, Inc., to capture key events and user properties that uniquely matter to Roamvy. &zwj;</p>
+
+<p>Push Notifications. We may request to send you push notifications regarding your account or certain features of the App. If you wish to opt-out from receiving these types of communications, you may turn them off in your device&rsquo;s settings.</p>
+
+<p>&zwj;The information is primarily needed to maintain the security and operation of our App, for troubleshooting and for our internal analytics and reporting purposes. This information also helps us to ensure that your device is compatible with our services. If you deactivate some or all of these information-gathering paths, some parts of our service may not be available to you.</p>
+
+<p><strong>1.3. Failure to provide information</strong></p>
+
+<p>Depending on the context in which we request you to provide personal information, your failure to provide complete and accurate information may prevent us from completing the ordering process and/or from providing part or all of the Services.</p>
+
+<p>Sometimes we must provide your personal data to third parties to comply with legal obligations. These include, but are not limited to, national regulators, for reasons such as resolving a billing dispute, for use in legal proceedings or even national security. In these cases, we will comply with whatever laws are in force at the time and provide such information as is required.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>2. How do we use your information?</strong></p>
+
+<p>In Short: We use your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent.</p>
+
+<p>We use personal information collected via our Services for a variety of business purposes described below. We use your personal information for these purposes for our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or to comply with our legal obligations. We indicate the specific grounds we rely on below.</p>
+
+<p>We use the information we collect or receive:</p>
+
+<p>To facilitate account creation and logon process: If you choose to link your account with us to a third-party account (such as your Google or Apple account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract. See the section below headed &ldquo;HOW DO WE HANDLE YOUR SOCIAL LOGINS&rdquo; for further information.</p>
+
+<p>Request feedback: We may use your information to request feedback and to contact you about your use of our Services.</p>
+
+<p>To manage user accounts: We may use your information for the purposes of managing our account and keeping it in working order.</p>
+
+<p>&zwj;To send administrative information to you: We may use your personal information to send you product, service and new feature information and/or information about changes to our terms, conditions, and policies.</p>
+
+<p>To protect our Services: We may use your information as part of our efforts to keep our Services safe and secure (for example, for fraud monitoring and prevention).</p>
+
+<p>To enforce our terms, conditions and policies for business purposes, to comply with legal and regulatory requirements or in connection with our contract.</p>
+
+<p>To respond to legal requirements and requests, and to prevent harm: Many countries require us to give local authorities certain personal information of customers who buy eSIMs; when required, we will provide this information. If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.</p>
+
+<p>Fulfill and manage your orders: We may use your information to fulfill and manage your orders, payments, returns, and exchanges made through the Services.</p>
+
+<p>Administer prize draws and competitions: We may use your information to administer prize draws and competitions when you elect to participate in our competitions.</p>
+
+<p>To deliver and facilitate delivery of services to the user: We may use your information to provide you with the requested service.</p>
+
+<p>To respond to user inquiries/offer support to users: We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Services.</p>
+
+<p>We may share your email address with third-party marketing partners to help us deliver SEM campaigns and other promotional activities.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>3. Will your information be shared with anyone?</strong></p>
+
+<p>&zwj;In Short: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations.</p>
+
+<p>&zwj;We may share your data that we hold based on the following legal basis:</p>
+
+<p>&zwj;Consent: We may process your data if you have given us specific consent to use your personal information for a specific purpose.</p>
+
+<p>Performance of a Contract: Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.</p>
+
+<p>Legal Obligations: We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).</p>
+
+<p>Vital Interests: We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.</p>
+
+<p>More specifically, we may need to process your data or share your personal information in the following situations:</p>
+
+<p>Business Transfers. We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</p>
+
+<p>&zwj;Affiliates. We may share your information with our affiliates, in which case we will require those affiliates to honor this privacy notice. Affiliates include our parent company and any subsidiaries, joint venture partners or other companies that we control or that are under common control with us.&zwj;</p>
+
+<p>Information collected using the Services (including, SMS and data usage) may be used, stored and processed in any country required to provide the Services. In this regard, or for purposes of sharing or disclosing data in accordance with this Policy, Roamvy reserves the right to transfer information outside of your home country.</p>
+
+<p>By using the Services, you consent to any such transfer of information outside of your home country.</p>
+
+<p>Roamvy may sell or buy subsidiary companies or business units. In such transactions as well as in the event Roamvy or substantially all of its assets are acquired by a third party, personal information of Roamvy users will generally be one of the business assets transferred. We reserve the right to include your personal information, collected as an asset, in any such transfer to a third party.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>4. Do we use cookies and other tracking technologies?</strong></p>
+
+<p>&zwj;In Short: We may use cookies and other tracking technologies to collect and store your information.</p>
+
+<p>4.1. What are cookies?</p>
+
+<p>Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.</p>
+
+<p>Cookies set by the website owner (in this case, Roamvy) are called &ldquo;first party cookies&rdquo;. Cookies set by parties other than the website owner are called &ldquo;third party cookies&rdquo;. Third party cookies enable third party features or functionality to be provided on or through the website (e.g. like advertising, interactive content and analytics). The parties that set these third-party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites.</p>
+
+<p>&zwj;4.2. Why do we use cookies?</p>
+
+<p>We use first- and third-party cookies for several reasons. Some cookies are required for technical reasons in order for our Websites to operate, and we refer to these as &ldquo;essential&rdquo; or &ldquo;strictly necessary&rdquo; cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our online properties. Third parties serve cookies through our Websites for advertising, analytics and other purposes. This is described in more detail below.</p>
+
+<p>&zwj;The specific types of first- and third-party cookies served through our Websites and the purposes they perform are described below (please note that the specific cookies served may vary depending on the specific online properties you visit):</p>
+
+<p>Strictly Necessary Cookies: These cookies are essential to provide you with services available through the Services and to enable you to use some of its features. For example, they allow you to log in to secure areas of the sites or applications and help the content of the pages you request load quickly. Without these cookies, the services that you have asked for cannot be provided, and we only use these cookies to provide you with those services.</p>
+
+<p>Functionality Cookies: These cookies allow the Services to remember choices you make when you use a site or application, such as remembering your language preferences, remembering your login details and remembering the changes you make to other parts of your account or preferences. The purpose of these cookies is to provide you with a more personal experience and to avoid you having to re-enter your preferences every time you use the Services.</p>
+
+<p>Performance Cookies: These cookies are used to collect information about traffic to the services and how users use the services. The information gathered does not identify any individual visitor. The information is aggregated and anonymous. It includes the number of visitors to, the websites that referred them, the pages visited, what time of day they visited, whether they have visited before, and other similar information. We use this information to help operate the services more efficiently, to gather broad demographic information and to monitor the level of activity on our services.</p>
+
+<p>4.3. How can I control cookies?</p>
+
+<p>You have the right to decide whether to accept or reject cookies. If you choose to reject cookies, you may still use our website though your access to some functionality and areas of our website may be restricted. You may also set or amend your web browser controls to accept or refuse cookies. As the means by which you can refuse cookies through your web browser controls vary from browser-to-browser, you should visit your browser&rsquo;s help menu for more information.</p>
+
+<p>For cookies related to Google Analytics, refer to: Google AdWords Conversion Tool : Privacy information of the provider(<a href="https://goo.gl/CUUMgi">https://goo.gl/CUUMgi</a>), Link to Opt-Out(<a href="https://goo.gl/ghZWnt">https://goo.gl/ghZWnt</a>). To opt-out of interest-based advertising by advertisers on our Services visit&nbsp;<a href="http://www.aboutads.info/choices/">http://www.aboutads.info/choices/</a>.</p>
+
+<p>4.4. What about other tracking technologies, like web beacons?</p>
+
+<p>Cookies are not the only way to recognize or track visitors to a website. We may use other, similar technologies from time to time, like web beacons (sometimes called &ldquo;tracking pixels&rdquo; or &ldquo;clear gifs&rdquo;). These are tiny graphics files that contain a unique identifier that enable us to recognize when someone has visited our Websites or opened an e-mail including them. This allows us, for example, to monitor the traffic patterns of users from one page within a website to another, to deliver or communicate with cookies, to understand whether you have come to the website from an online advertisement displayed on a third-party website, to improve site performance, and to measure the success of email marketing campaigns. In many instances, these technologies rely on cookies to function properly, and so declining cookies will impair their functioning.</p>
+
+<p>4.5. Do you use Flash cookies or Local Shared Objects?</p>
+
+<p>Websites may also use so-called &ldquo;Flash Cookies&rdquo; (also known as Local Shared Objects or &ldquo;LSOs&rdquo;) to, among other things, collect and store information about your use of our services, fraud prevention and for other site operations.</p>
+
+<p>If you do not want Flash Cookies stored on your computer, you can adjust the settings of your Flash player to block Flash Cookies storage using the tools contained in the Website Storage Settings Panel. You can also control Flash Cookies by going to the Global Storage Settings Panel and following the instructions (which may include instructions that explain, for example, how to delete existing Flash Cookies (referred to &ldquo;information&rdquo; on the Macromedia site), how to prevent Flash LSOs from being placed on your computer without your being asked, and (for Flash Player 8 and later) how to block Flash Cookies that are not being delivered by the operator of the page you are on at the time).</p>
+
+<p>&zwj;Setting the Flash Player to restrict or limit acceptance of Flash Cookies may reduce or impede the functionality of some Flash applications, including, potentially, Flash applications used in connection with our services or online content.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>5. How do we handle your social logins?</strong></p>
+
+<p>&zwj;In Short: If you choose to register or log in to our services using a social media account, we may have access to certain information about you.</p>
+
+<p>Our Services offer you the ability to register and login using your third-party social media account details (like your Google, Facebook or Apple logins). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile Information we receive varies depending on the social media provider concerned, but will often include your name, email address, friends list, profile picture as well as other information you choose to make public on such a social media platform.</p>
+
+<p>&zwj;We will use the information we receive only for the purposes described in this privacy notice or that are otherwise made clear to you on the relevant Services. We do not control, and are not responsible for, other uses of your personal information by your third-party social media provider. You may review their privacy notice to understand how they collect, use and share your personal information, and how you can set your privacy preferences on their sites and apps.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>6. What is our stance on third-party websites?</strong></p>
+
+<p>&zwj;In Short: We are not responsible for the safety of any information that you share with third-party providers who advertise, but are not affiliated with, our Website.</p>
+
+<p>The Services may contain advertisements from third parties that are not affiliated with us and which may link to other websites, online services or mobile applications. We cannot guarantee the safety and privacy of data you provide to any third parties. Any data collected by third parties is not covered by this privacy notice. We are not responsible for the content or privacy and security practices and policies of any third parties, including other websites, services or applications that may be linked to or from the Services. You should review the policies of such third parties and contact them directly to respond to your questions.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>7. How long do we keep your information?</strong></p>
+
+<p>&zwj;In Short: We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice unless otherwise required by law.</p>
+
+<p>We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements). We may hold certain types of data as outlined in the table below past the termination of the user&rsquo;s account:</p>
+
+<p>Data Retained Retention Period</p>
+
+<p>Provision of the Service(s) 12 Months or As Required by Legislation</p>
+
+<p>Data Usage 12 Months or As Required by Legislation</p>
+
+<p>Invoices and Billing Records 7 Years</p>
+
+<p>Customer Support Records 3 Years</p>
+
+<p>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>8. How do we keep your information safe?</strong></p>
+
+<p>&zwj;In Short: We aim to protect your personal information through a system of organizational and technical security measures.</p>
+
+<p>We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process, including data encryption, data anonymization wherever possible, and use of highly secure servers (both electronically and physically secured). However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security, and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>9. What are your privacy rights?</strong></p>
+
+<p>&zwj;In Short:* You have rights that allow you access to and control over your personal information. You may review, change, or terminate your account at any time.</p>
+
+<p>You have the right:</p>
+
+<p>to request access and obtain a copy of your personal information,</p>
+
+<p>to request rectification or erasure,</p>
+
+<p>to restrict the processing of your personal information; and if applicable, to restrict data portability,</p>
+
+<p>to object to the storage of your personal information, under certain conditions.</p>
+
+<p>To make such a request, please use the contact details provided below. We will consider and act upon any request in accordance with applicable data protection laws.</p>
+
+<p>If we rely on your consent to process your personal information, you have the right to withdraw your consent at any time. Please note however that this will not affect the lawfulness of the processing before its withdrawal, nor will it affect the processing of your personal information justified by lawful grounds other than consent.</p>
+
+<p>If you are resident in the European Economic Area and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here:&nbsp;<a href="http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm">http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm</a></p>
+
+<p>If you are resident in Switzerland, the contact details for the data protection authorities are available here:&nbsp;<a href="https://www.edoeb.admin.ch/edoeb/en/home.html">https://www.edoeb.admin.ch/edoeb/en/home.html</a></p>
+
+<p>Account Information</p>
+
+<p>If you would at any time like to review or change the information in your account or terminate your account, you can log in to your account settings and update your user account.</p>
+
+<p>Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms and Conditions and/or comply with applicable legal requirements.</p>
+
+<p>&zwj;Cookies and similar technologies: Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services. To opt-out of interest-based advertising by advertisers on our Services visit&nbsp;<a href="http://www.aboutads.info/choices/">http://www.aboutads.info/choices/</a></p>
+
+<p>Opting out of email marketing: You can unsubscribe from our marketing email list at any time by clicking on the unsubscribe link in the emails that we send or by contacting us using the details provided below. You will then be removed from the marketing email list &ndash; however, we may still communicate with you, for example to send you service-related emails that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes. To otherwise opt-out, you may access your account settings and update your preferences.</p>
+
+<p>Phone number communications:&nbsp;If you have provided your phone number, we may contact you via SMS or WhatsApp for support-related or service notifications only. We do not send promotional messages without your explicit consent. If you wish to stop receiving such communications, you can reply with &ldquo;STOP&rdquo; or contact us using the information provided below.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>10. Children&rsquo;s Policy</strong></p>
+
+<p>Roamvy is not directed to children under the age of 13 years. The Service is also not offered to children whose age makes it illegal to process their personal data or requires parental consent for the processing of their personal data under the GDPR or other local law.</p>
+
+<p>We do not knowingly collect personal data from children under 13 years or under the applicable age limit (the &ldquo;Age Limit&rdquo;). If you are under the Age Limit, please do not use the Services, and do not provide any personal data to us.</p>
+
+<p>If you are a parent of a child under the Age Limit and become aware that your child has provided personal data to Roamvy, please contact us at&nbsp;<a href="mailto:privacy@getroamvy.com">privacy@roamvy.com</a></p>
+
+<p>&zwj;If we learn that we have collected the personal data of a child under the age of 13 years, we will take reasonable steps to delete the personal data. This may require us to delete the Roamvy account for that child.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>11. Controls for do-not-track features</strong></p>
+
+<p>Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (&ldquo;DNT&rdquo;) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>12. Do California residents have specific privacy rights?</strong></p>
+
+<p>&zwj;In Short: Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.</p>
+
+<p>California Civil Code Section 1798.83, also known as the &ldquo;Shine The Light&rdquo; law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.</p>
+
+<p>&zwj;CCPA Privacy Notice</p>
+
+<p>The California Code of Regulations defines a &ldquo;resident&rdquo; as:</p>
+
+<p>(1) every individual who is in the State of California for other than a temporary or transitory purpose and</p>
+
+<p>(2) every individual who is domiciled in the State of California who is outside the State of California for a temporary or transitory purpose</p>
+
+<p>All other individuals are defined as &ldquo;non-residents.&rdquo;</p>
+
+<p>If this definition of &ldquo;resident&rdquo; applies to you, certain rights and obligations apply regarding your personal information.</p>
+
+<p>What categories of personal information do we collect? We may collect the following categories of personal information:</p>
+
+<ol>
+	<li>
+	<p>Identifiers. Examples: Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address and account name</p>
+	</li>
+	<li>
+	<p>Personal information categories listed in the California Customer Records statute. Examples: Name, contact information, education, employment, employment history and financial information</p>
+	</li>
+	<li>
+	<p>Protected classification characteristics under California or federal law. Examples: Gender and date of birth</p>
+	</li>
+	<li>
+	<p>Commercial information. Examples: Transaction information, purchase history, financial details and payment information</p>
+	</li>
+	<li>
+	<p>Biometric information. Examples: Fingerprints and voiceprints.</p>
+	</li>
+	<li>
+	<p>Internet or other similar network activity. Examples: Browsing history, search history, online behavior, interest data, and interactions with our and other websites, applications, systems and advertisements</p>
+	</li>
+	<li>
+	<p>Geolocation data. Example: Device location.</p>
+	</li>
+	<li>
+	<p>Audio, electronic, visual, thermal, olfactory, or similar information. Example: Images and audio, video or call recordings created in connection with our business activities.</p>
+	</li>
+	<li>
+	<p>Professional or employment-related information. Example: Business contact details in order to provide you our services at a business level, job title as well as work history and professional qualifications if you apply for a job with us</p>
+	</li>
+	<li>
+	<p>Education Information. Examples: Student records and directory information.</p>
+	</li>
+	<li>
+	<p>Inferences drawn from other personal information. Examples: Inferences drawn from any of the collected personal information listed above to create a profile or summary about, for example, an individual&rsquo;s preferences and characteristics.</p>
+	</li>
+</ol>
+
+<p>We may also collect other personal information outside of these categories in instances where you interact with us in-person, online, or by phone or mail in the context of:</p>
+
+<ol>
+	<li>
+	<p>Receiving help through our customer support channels;</p>
+	</li>
+	<li>
+	<p>Participation in customer surveys or contests; and</p>
+	</li>
+	<li>
+	<p>Facilitation in the delivery of our Services and to respond to your inquiries</p>
+	</li>
+</ol>
+
+<p>How do we use and share your personal information?</p>
+
+<p>More information about our data collection and sharing practices can be found in this privacy notice.</p>
+
+<p>You may contact us by referring to the contact details at the bottom of this document.</p>
+
+<p>If you are using an authorized agent to exercise your right to opt-out, we may deny a request if the authorized agent does not submit proof that they have been validly authorized to act on your behalf.</p>
+
+<p>Will your information be shared with anyone else?</p>
+
+<p>We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Each service provider is a for-profit entity that processes the information on our behalf.</p>
+
+<p>We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be &ldquo;selling&rdquo; of your personal data.</p>
+
+<p>&zwj;Roamvy has not sold any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. Roamvy will not sell personal information in the future belonging to website visitors, users and other consumers.</p>
+
+<p>Your rights with respect to your personal data</p>
+
+<p>A. Right to request deletion of the data - Request to delete</p>
+
+<p>You can ask for the deletion of your personal information. If you ask us to delete your personal information, we will respect your request and delete your personal information, subject to certain exceptions provided by law, such as (but not limited to) the exercise by another consumer of his or her right to free speech, our compliance requirements resulting from a legal obligation or any processing that may be required to protect against illegal activities.</p>
+
+<p>B. Right to be informed - Request to know</p>
+
+<p>Depending on the circumstances, you have a right to know:</p>
+
+<p>whether we collect and use your personal information;</p>
+
+<ol>
+	<li>
+	<p>the categories of personal information that we collect;</p>
+	</li>
+	<li>
+	<p>the purposes for which the collected personal information is used;</p>
+	</li>
+	<li>
+	<p>whether we sell your personal information to third parties;</p>
+	</li>
+	<li>
+	<p>the categories of personal information that we sold or disclosed for a business purpose;</p>
+	</li>
+	<li>
+	<p>the categories of third parties to whom the personal information was sold or disclosed for a business purpose; and</p>
+	</li>
+	<li>
+	<p>the business or commercial purpose for collecting or selling personal information.</p>
+	</li>
+</ol>
+
+<p>In accordance with applicable law, we are not obligated to provide or delete consumer information that is de-identified in response to a consumer request or to re-identify individual data to verify a consumer request.</p>
+
+<p>C. Right to Non-Discrimination for the Exercise of a Consumer&rsquo;s Privacy Rights</p>
+
+<p>We will not discriminate against you if you exercise your privacy rights.</p>
+
+<p>Verification process:</p>
+
+<p>Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. These verification efforts require us to ask you to provide information so that we can match it with the information you have previously provided us. For instance, depending on the type of request you submit, we may ask you to provide certain information so that we can match the information you provide with the information we already have on file, or we may contact you through a different communication method (e.g. phone or email) that you have previously identified to us. We may also use other verification methods as the circumstances require.</p>
+
+<p>We will only use personal information provided in your request to verify your identity or authority to make the request. To the extent possible, we will avoid requesting additional information from you for the purposes of verification. If, however, we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity, and for security or fraud-prevention purposes. We will delete such additionally provided information as soon as we finish verifying your identity.</p>
+
+<p>&zwj;D. Other privacy rights</p>
+
+<p>a. you may object to the processing of your personal data</p>
+
+<p>b. you may request correction of your personal data if it is incorrect or no longer relevant, or ask to restrict the processing of the data</p>
+
+<p>c. you can designate an authorized agent to make a request under the CCPA on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with the CCPA.</p>
+
+<p>d. you may request to opt-out from future selling of your personal information to third parties. Upon receiving a request to opt-out, we will act upon the request as soon as feasibly possible, but no later than 15 days from the date of the request submission.</p>
+
+<p>To exercise these rights, you can contact us via the contact details at the bottom of this document. If you have a complaint about how we handle your data, we would like to hear from you.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>13. Do we make updates to this notice?</strong></p>
+
+<p>&zwj;In Short: Yes, we will update this notice as necessary to stay compliant with relevant laws.</p>
+
+<p>&zwj;We may update this privacy notice from time to time. The updated version will be indicated by an updated &ldquo;Revised&rdquo; date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>14. How can you contact us about this notice?</strong></p>
+
+<p>If you have questions or comments about this notice, you may contact our Data Protection Officer (DPO), Adil Sheikh, by email at&nbsp;<a href="mailto:privacy@getroamvy.com">privacy@roamvy.com</a></p>
+
+<p>HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</p>
+
+<p>Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please email us at&nbsp;<a href="mailto:privacy@getroamvy.com">privacy@roamvy.com</a> We will respond to your request within 30 days.</p>
+
+<p>&nbsp;</p>
+
+                     </p>
+                  </div>
+                  
+               
+              </div>
+           </div>
+        </div>
+     </section>
+
+
+</div>
+
+
+<footer class="footer-area pt-5">
+    <div class="footer-widget">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between flex-wrap border-bottom mb-lg-5 mb-2 pb-lg-4 pb-2 gap-3">
+                <div class="footer-left-logo ">
+                      <a href="/" class="footer-logo mb-0">
+                            <img src="/static/admin-assets/images/logo.png">
+                        </a>
+                </div>
+                <div class="store-icon d-flex align-items-center gap-3">
+                    <div class="cming-badge">
+                        Coming Soon
+                    </div>
+                    <a href="#">
+                        <img src="/static/admin-assets/images/apple-store.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/static/admin-assets/images/google-store.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row footer-widget-wrapper pt-100 pb-70">
+                <!-- <div class="col">
+                    <div class="footer-widget-box about-us">
+                        <a href="/" class="footer-logo">
+                            <img src="/static/admin-assets/images/logo.png">
+                        </a>
+                        <p class="mb-3">
+                            "I've had issues with dropped calls and poor coverage in the  past, but since switching to [Provider], my phone has been working  perfectly
+                        </p>
+                    </div>
+                </div>       -->
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Explore</h4>                    
+                        <ul class="footer-list">
+                            
+                            
+                                    
+                                    <li><a href="/" onclick="Loader()">Home</a></li>
+                                    
+                            
+                                    
+                                    <li><a href="/destinations/" onclick="Loader()">Destinations</a></li>
+                                    
+                            
+                                    
+                                    <li><a href="/compatibility/" onclick="Loader()">Compatibility</a></li>
+                                    
+                            
+                                    
+                                    <li><a href="/affiliate/partner-with-us/" onclick="Loader()">Partner with us</a></li>
+                                    
+                            
+                                    
+                                    <li><a href="/help-center/" onclick="Loader()">Help Center</a></li>
+                                    
+                            
+                                    
+                                    <li><a href="/blog-list/" onclick="Loader()">Blog</a></li>
+                                    
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Countries</h4>
+                        <ul class="footer-list">
+                            
+                            
+                                
+                                    <li>
+                                        <a href="/country-packages/united-states/">
+                                            <i class="fas fa-angle-right"></i>United States
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/canada/">
+                                            <i class="fas fa-angle-right"></i>Canada
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/mexico/">
+                                            <i class="fas fa-angle-right"></i>Mexico
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/france/">
+                                            <i class="fas fa-angle-right"></i>France
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/italy/">
+                                            <i class="fas fa-angle-right"></i>Italy
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/spain/">
+                                            <i class="fas fa-angle-right"></i>Spain
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/turkey/">
+                                            <i class="fas fa-angle-right"></i>Turkey
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/country-packages/united-arab-emirates/">
+                                            <i class="fas fa-angle-right"></i>United Arab Emirates
+                                        </a>
+                                    </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Quick Links</h4>
+                        <ul class="footer-list">
+                            
+                            
+                                
+                                    
+                                    <li><a href="/about-us/" onclick="Loader()">About Us</a></li>
+                                    
+                            
+                                
+                                    
+                                    <li><a href="/contact-us/" onclick="Loader()">Contact Us</a></li>
+                                    
+                            
+                                
+                                    
+                                    <li><a href="/refund-policy/" onclick="Loader()">Refund Policy</a></li>
+                                    
+                            
+                                
+                                    
+                                    <li><a href="/cookies-policy/" onclick="Loader()">Cookie Policy</a></li>
+                                    
+                            
+                                
+                                    
+                                    <li><a href="/privacy-policy/" onclick="Loader()">Privacy Policy</a></li>
+                                    
+                            
+                                
+                                    
+                                    <li><a href="/terms-and-conditions/" onclick="Loader()">Terms and Conditions</a></li>
+                                    
+                            
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget-box list">
+                        <h4 class="footer-widget-title">Get In Touch </h4>
+                        <ul class="footer-social d-flex flex-column">
+                                                        
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=61577800799386" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                        </svg>
+                                    </span>
+                                    Facebok
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/roamvy/" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                        </svg>
+                                    </span>
+                                    Instagram
+                                </a>
+                            </li>
+                             <li>
+                                <a href="https://www.tiktok.com/@roamvy" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                                        </svg>
+                                    </span>
+                                    Tiktkok
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/RoamvyeSIM" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                        </svg>
+                                    </span>
+                                    Twitter
+                                </a>
+                            </li>
+                          
+                            <li>
+                                <a href="https://www.linkedin.com/company/roamvy" target="_blank" class="d-flex align-items-center gap-2 text-capitalize">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                        </svg>
+                                    </span>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-xl-between justify-content-center gap-3 flex-wrap">
+                <div class="copyright-link">
+                    <p class="mb-0 text-center">Copyright © <span id="full_year"></span><a
+                        href="/"> Roamvy </a> | All Rights Reserved.
+                    </p>
+                </div>
+                <div class="payment-icons">
+                    <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center justify-content-center flex-wrap gap-2">
+                        <li class="p-1">
+                            <a href="#" >
+                                <img src="/static/admin-assets/images/visa.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/mastercard.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/paypal-logo.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/amex.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/apple.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-1">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/google-pay.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#">
+                                <img src="/static/admin-assets/images/stripe.png" alt="" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+
+
+<script src="/static/admin-assets/js/jquery-3.6.0.min.js"></script>
+<script src="/static/admin-assets/js/bootstrap.bundle.min.js"></script>
+<script src="/static/admin-assets/js/jquery.fancybox.min.js"></script>
+<!-- Swiper JS -->
+<script src="/static/admin-assets/js/swiper-js/swiper-bundle.min.js"></script>
+<script src="/static/admin-assets/js/jquery.slimscroll.min.js"></script>
+<script src="/static/admin-assets/js/jquery.dataTables.min.js"></script>
+<script src="/static/admin-assets/js/dataTables.bootstrap4.min.js"></script>
+<script src="/static/admin-assets/js/script.js"></script>
+<script src="/static/admin-assets/js/validate.js"></script>
+<script src="/static/admin-assets/js/additional-methods.min.js"></script>
+<script src="/static/admin-assets/js/customized-js/common.js"></script>
+<script src="/static/admin-assets/js/customized-js/sweet-alerts.js"></script>
+<script src="/static/admin-assets/js/sweetalert2.all.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNO66KAIKXElPS8PiPQhMcncpy4-rcjzQ&callback=initMap"async defer></script>
+
+
+<script>
+   function initMap() {
+       var centerCoordinates = new google.maps.LatLng(37.6, -95.665);
+       var defaultOptions = { center: centerCoordinates, zoom: 4 }
+   }
+</script>
+<script>
+    function locate(){
+        const options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0,
+        };
+        function success(position) {
+            var currentLatitude = position.coords.latitude;
+            var currentLongitude = position.coords.longitude;
+            try{
+                $.ajax({
+                    url: "/save-lat-lang/",
+                    type: 'POST',
+                    asyn:true,
+                    data: {
+                        'lat': currentLatitude,
+                        'long':currentLongitude
+                    },
+                    success: function(response) {
+                        response=response
+                        localStorage.setItem("location",true)
+                        window.location.reload()
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            }
+            catch(err){
+                console.log(err)
+            }
+        }
+        function error(err) {
+            console.log(`ERROR(${err.code}): ${err.message}`);
+        }
+        navigator.geolocation.getCurrentPosition(success, error, options);
+    }
+    var location_saved=localStorage.getItem("location")
+        if (!location_saved){
+            locate()
+        }
+</script>
+
+</body>
+
+</html>
